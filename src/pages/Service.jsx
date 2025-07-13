@@ -1,17 +1,21 @@
 import bannerImage from "../assets/services.png";
-import Banner from "../components/Banner";
+import Delivery from "../components/service/Delivery";
+import Reviews from "../components/service/Reviews";
+import Banner from "../components/Shared/Banner";
 
 const Service = () => {
   return (
     <div>
       <Banner
         bannerImage={bannerImage}
-        title={"Efficient & Reliable Shipping And Logistics Company"}
+        title={"Smart logistics ensuring fast deliveries & global reach"}
         paragraph={
-          "Seamless and dependable logistics solutions designed to keep your business moving forward"
+          "We provide smart logistics solutions that keep your business moving. From fast shipping to secure handling and global coverage, our services ensure your goods reach their destination safely and on time."
         }
-        buttonText={"Learn More"}
+        buttonText={"Our Services"}
       />
+      <Delivery />
+      <Reviews />
     </div>
   );
 };

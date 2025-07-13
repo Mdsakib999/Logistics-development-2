@@ -2,7 +2,7 @@ import { FaLocationDot, FaPhone } from "react-icons/fa6";
 
 const InfoBar = () => {
   return (
-    <div className="bg-[#DADFFF] flex items-center justify-between p-5">
+    <div className="bg-blue-200 flex items-center justify-between p-5">
       <div className="flex items-center gap-x-2">
         <FaLocationDot />
         <p>Nasirabad properties ltd, Chattogram</p>

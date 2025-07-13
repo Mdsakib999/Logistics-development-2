@@ -1,5 +1,5 @@
-import Banner from "../components/Banner";
 import bannerImage from "../assets/home.webp";
+import Banner from "../components/Shared/Banner";
 
 const Home = () => {
   return (
