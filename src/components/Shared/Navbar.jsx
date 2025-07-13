@@ -41,7 +41,7 @@ const Navbar = () => {
               className={`px-3 py-1 rounded transition-colors duration-200 ${
                 isActive(link.to)
                   ? "border-b-2 hover:border-b-4 duration-300 rounded-b-lg text-blue-300 font-bold"
-                  : "hover:bg-white hover:text-blue-400"
+                  : "hover:bg-white hover:text-blue-400 hover:rounded-full p-2"
               }`}
             >
               {link.label}
@@ -72,7 +72,7 @@ const Navbar = () => {
               className={`px-6 py-2 rounded transition-colors duration-200 ${
                 isActive(link.to)
                   ? "border-b-2 hover:border-2 hover:border-white duration-300 rounded-b-lg text-blue-100 font-bold"
-                  : "hover:bg-white hover:text-blue-400"
+                  : "hover:bg-white hover:text-blue-400 hover:rounded-full p-2"
               }`}
               onClick={() => setMenuOpen(false)}
             >

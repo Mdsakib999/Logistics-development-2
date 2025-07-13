@@ -1,16 +1,16 @@
 import bannerImage from "../assets/about.webp";
-import Banner from "../components/Banner";
+import Banner from "../components/Shared/Banner";
 
 const About = () => {
   return (
     <div>
       <Banner
         bannerImage={bannerImage}
-        title={"Efficient & Reliable Shipping And Logistics Company"}
+        title={"About Us"}
         paragraph={
-          "Seamless and dependable logistics solutions designed to keep your business moving forward"
+          "We’re a dedicated team passionate about moving goods quickly and safely worldwide.With years of experience in logistics, we focus on reliable services, innovative solutions, and building trust with every shipment"
         }
-        buttonText={"Learn More"}
+        buttonText={"Join Us"}
       />
     </div>
   );

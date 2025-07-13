@@ -1,17 +1,21 @@
 import bannerImage from "../assets/contact.webp";
-import Banner from "../components/Banner";
+import ContactForm from "../components/contact/ContactForm";
+import InfoSection from "../components/contact/InfoSection";
+import Banner from "../components/Shared/Banner";
 
 const Contact = () => {
   return (
     <div>
       <Banner
         bannerImage={bannerImage}
-        title={"Efficient & Reliable Shipping And Logistics Company"}
+        title={"Contact Us"}
         paragraph={
-          "Seamless and dependable logistics solutions designed to keep your business moving forward"
+          "We’d love to hear from you! Whether you have a question, need assistance, or want to share feedback, feel free to reach out. Our team is here to help and will get back to you as soon as possible."
         }
-        buttonText={"Learn More"}
+        buttonText={"Get in touch"}
       />
+      <InfoSection />
+      <ContactForm />
     </div>
   );
 };

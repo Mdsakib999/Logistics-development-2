@@ -1,12 +1,14 @@
 import { Outlet } from "react-router";
-import Footer from "./components/Footer";
-import InfoBar from "./components/InfoBar";
+import InfoBar from "./components/Shared/InfoBar";
+import Footer from "./components/Shared/Footer";
 
 const App = () => {
   return (
     <div className="max-w-7xl mx-auto font-inter">
       <InfoBar />
-      <Outlet />
+      <div className="min-h-screen">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
