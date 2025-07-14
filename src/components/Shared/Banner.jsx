@@ -9,7 +9,7 @@ const Banner = ({ bannerImage, title, paragraph, buttonText }) => {
         src={bannerImage}
         alt="bannerImage"
       />
-      <div className="absolute w-full top-2 left-0 px-2 sm:px-6 md:px-10">
+      <div className="absolute w-full top-2 left-0 md:px-10">
         <Navbar />
       </div>
       <div className="w-full md:w-1/2 absolute inset-0 top-[20%] flex flex-col justify-center text-white space-y-4 px-2 sm:px-6 md:px-10 lg:px-16 max-w-full">

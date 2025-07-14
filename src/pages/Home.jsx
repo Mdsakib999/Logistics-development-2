@@ -1,4 +1,5 @@
 import bannerImage from "../assets/home.webp";
+import Features from "../components/Home/Features";
 import Banner from "../components/Shared/Banner";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
         }
         buttonText={"Learn More"}
       />
+      <Features />
     </div>
   );
 };

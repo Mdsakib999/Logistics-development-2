@@ -22,7 +22,7 @@ const InfoSection = () => {
             <FaLocationDot className="group-hover:text-white" size={32} />
           </div>
           <p className="text-sm sm:text-base text-center">
-            Nasirabad properties ltd, Chattogram
+            Erika-Mann-Straße 33, 80636 München
           </p>
         </div>
         <div className="flex flex-col items-center">
