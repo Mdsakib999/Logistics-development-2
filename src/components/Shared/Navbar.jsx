@@ -17,77 +17,113 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="relative z-50">
-      <div className="flex items-center justify-between text-white md:px-4 md:py-3">
-        <Link className="text-2xl md:text-3xl lg:text-4xl font-serif" to="/">
+    <nav className="relative z-50 bg-transparent">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between text-white">
+        {/* Logo */}
+        <Link
+          className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold hover:text-blue-300 transition-colors duration-200"
+          to="/"
+        >
           Swift
         </Link>
-        {/* Hamburger menu for mobile */}
-        <div className="md:hidden">
-          <button
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
-            className="focus:outline-none cursor-pointer"
-            onClick={() => setMenuOpen((prev) => !prev)}
-          >
-            {menuOpen ? <RxCross2 /> : <FaBars size={22} />}
-          </button>
-        </div>
-        {/* Desktop links */}
-        <div className="hidden md:flex flex-1 justify-center items-center gap-x-8 md:text-lg lg:text-xl font-serif">
+
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className={`px-3 py-1 rounded transition-colors duration-200 ${
+              className={`relative font-serif text-lg transition-all duration-200 ${
                 isActive(link.to)
-                  ? "border-b-2 hover:border-b-4 duration-300 rounded-b-lg text-blue-300 font-bold"
-                  : "hover:bg-white hover:text-blue-400 hover:rounded-full p-2"
+                  ? "text-blue-300 font-semibold"
+                  : "text-white hover:text-blue-300"
               }`}
             >
               {link.label}
+              {isActive(link.to) && (
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-300 rounded-full"></span>
+              )}
             </Link>
           ))}
         </div>
-        <div className="hidden md:block">
-          <Link className="font-serif" to="/contact">
-            <Button buttonText={"Contact"}></Button>
+
+        {/* Desktop Contact Button */}
+        <div className="hidden lg:block">
+          <Link to="/contact">
+            <Button buttonText="Contact" />
           </Link>
         </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          className="cursor-pointer lg:hidden p-2 rounded-md hover:bg-white/10 transition-colors duration-200 focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <RxCross2 size={24} /> : <FaBars size={24} />}
+        </button>
       </div>
-      {/* Mobile menu overlay */}
-      {menuOpen && (
-        <div className="fixed inset-0 bg-blue-500 bg-opacity-95 flex flex-col items-center justify-center gap-y-8 text-white text-2xl font-serif transition-all duration-300 z-50">
-          {/* Close icon at top-right */}
-          <button
-            aria-label="Close menu"
-            className="cursor-pointer absolute top-6 right-6 p-2 rounded-full bg-white/20 hover:bg-white/40 text-white text-3xl focus:outline-none"
-            onClick={() => setMenuOpen(false)}
-          >
-            <RxCross2 />
-          </button>
-          {navLinks.map((link) => (
+
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`fixed inset-0 bg-[#161c3d] backdrop-blur-sm transition-all duration-300 lg:hidden ${
+          menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+        onClick={() => setMenuOpen(false)}
+      >
+        <div
+          className={`absolute top-0 right-0 h-full w-80 max-w-[85vw] bg-[#11152D] backdrop-blur-md shadow-2xl transition-transform duration-300 ${
+            menuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Mobile Menu Header */}
+          <div className="flex items-center justify-between p-6 border-b border-white/10">
             <Link
-              key={link.to}
-              to={link.to}
-              className={`px-6 py-2 rounded transition-colors duration-200 ${
-                isActive(link.to)
-                  ? "border-b-2 hover:border-2 hover:border-white duration-300 rounded-b-lg text-blue-100 font-bold"
-                  : "hover:bg-white hover:text-blue-400 hover:rounded-full p-2"
-              }`}
+              className="cursor-pointer text-2xl font-serif font-bold text-white hover:text-blue-300 transition-colors duration-200"
+              to="/"
               onClick={() => setMenuOpen(false)}
             >
-              {link.label}
+              Swift
             </Link>
-          ))}
-          <Link
-            to="/contact"
-            className="mt-6"
-            onClick={() => setMenuOpen(false)}
-          >
-            <Button buttonText={"Contact"}></Button>
-          </Link>
+            <button
+              aria-label="Close menu"
+              className="cursor-pointer p-2 rounded-md hover:bg-white/10 transition-colors duration-200 focus:outline-none"
+              onClick={() => setMenuOpen(false)}
+            >
+              <RxCross2 size={24} className="text-white" />
+            </button>
+          </div>
+
+          {/* Mobile Menu Links */}
+          <div className="flex flex-col p-6 space-y-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`relative px-4 py-3 rounded-lg font-serif text-lg transition-all duration-200 ${
+                  isActive(link.to)
+                    ? "text-blue-300 font-semibold bg-white/5"
+                    : "text-white hover:text-blue-300 hover:bg-white/5"
+                }`}
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+                {isActive(link.to) && (
+                  <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-6 bg-blue-300 rounded-r-full"></span>
+                )}
+              </Link>
+            ))}
+
+            {/* Mobile Contact Button */}
+            <div className="pt-6 mt-6 border-t border-white/10">
+              <Link to="/contact" onClick={() => setMenuOpen(false)}>
+                <Button buttonText="Contact" />
+              </Link>
+            </div>
+          </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
