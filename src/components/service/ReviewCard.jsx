@@ -4,7 +4,7 @@ import { Slide } from "react-awesome-reveal";
 
 const ReviewCard = ({ review }) => {
   return (
-    <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto bg-blue-400 text-white p-4 sm:p-6 md:p-10 rounded-3xl flex flex-col">
+    <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto bg-blue-400 text-white p-4 sm:p-6 md:p-10 rounded-md md:rounded-3xl flex flex-col">
       <div className="flex flex-wrap items-center gap-x-1 mb-4 text-yellow-400">
         <FaStar color="yellow" size={20} />
         <FaStar color="yellow" size={20} />
