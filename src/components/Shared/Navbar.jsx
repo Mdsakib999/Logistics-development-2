@@ -1,11 +1,13 @@
 import { Link, useLocation } from "react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "./Button";
 import { FaBars } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const location = useLocation();
 
   const navLinks = [
@@ -16,9 +18,24 @@ const Navbar = () => {
 
   const isActive = (path) => location.pathname === path;
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="relative z-50 bg-transparent">
-      <div className="px-4 py-4 flex items-center justify-between text-white">
+    <nav
+      className={`fixed left-0 z-50 w-full transition-colors duration-300 ${
+        isScrolled
+          ? "top-0 bg-[#11152D]/90 backdrop-blur shadow"
+          : "top-20 bg-transparent"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between text-white">
         {/* Logo */}
         <Link
           className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold hover:text-blue-300 transition-colors duration-200"
@@ -66,19 +83,19 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-[#161c3d] backdrop-blur-sm transition-all duration-300 lg:hidden ${
-          menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
+        className={`fixed w-full inset-0 border bg-[#11152D] backdrop-blur-sm transition-all duration-300 lg:hidden ${
+          menuOpen ? "opacity-100 visible" : "invisible"
+        } `}
         onClick={() => setMenuOpen(false)}
       >
         <div
-          className={`absolute top-0 right-0 h-full w-80 max-w-[85vw] bg-[#11152D] backdrop-blur-md shadow-2xl transition-transform duration-300 ${
+          className={`bg-[#11152D] absolute z-50 top-0 right-0 h-full w-80 max-w-[85vw] backdrop-blur-md shadow-2xl transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+          } `}
           onClick={(e) => e.stopPropagation()}
         >
           {/* Mobile Menu Header */}
-          <div className="flex items-center justify-between p-6 border-b border-white/10">
+          <div className="bg-[#11152D] flex items-center justify-between p-6 border-b border-white/10">
             <Link
               className="cursor-pointer text-2xl font-serif font-bold text-white hover:text-blue-300 transition-colors duration-200"
               to="/"
@@ -96,7 +113,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Links */}
-          <div className="flex flex-col p-6 space-y-1">
+          <div className="bg-[#11152D] flex flex-col p-6 space-y-1">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
