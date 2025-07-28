@@ -57,7 +57,7 @@ const OurStory = () => {
           <img
             src={team}
             alt="Our Team"
-            className="hidden lg:block absolute -left-16 top-32 h-80 min-h-96 rounded-xl shadow-lg z-50"
+            className="hidden lg:block absolute -left-16 top-32 h-80 min-h-96 rounded-xl shadow-lg z-40"
           />
         </div>
       </div>
