@@ -3,6 +3,7 @@ import sol1 from "../../assets/sol1.jpg";
 import sol2 from "../../assets/sol2.avif";
 import sol3 from "../../assets/sol3.jpg";
 import sol4 from "../../assets/sol4.jpg";
+import Button from "../Shared/Button";
 
 const Solutions = () => {
   const data = [
@@ -40,10 +41,8 @@ const Solutions = () => {
           </div>
         ))}
       </div>
-      <Link to="/service" className="flex flex-col items-center">
-        <button className="cursor-pointer bg-[#0778D4] text-white hover:bg-white hover:text-[#0778D4] border border-[#0778D4] duration-300 rounded-full px-6 py-3 mb-16">
-          Explore Our Services
-        </button>
+      <Link to="/service" className="flex flex-col items-center mb-10">
+        <Button buttonText={"Explore Our Services"} />
       </Link>
     </div>
   );
