@@ -1,5 +1,6 @@
 import { blogData } from "../../utils/blogData";
 import blogImage from "../../assets/blogImage.png";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const Blog = () => {
   return (
@@ -17,36 +18,37 @@ const Blog = () => {
         {/* Left - Blog List */}
         <div className="w-full md:w-2/3 flex flex-col justify-center">
           {blogData.map((blog, index) => (
-            <div
-              className="flex items-center gap-4 bg-white shadow-md rounded-lg my-2 p-3 sm:p-4"
-              key={index}
-            >
-              <img
-                className="w-14 h-14 sm:w-16 sm:h-16 rounded-md object-cover"
-                src={blog.image}
-                alt="blog"
-              />
-              <div className="space-y-1 sm:space-y-2 w-full">
-                <div className="flex flex-wrap items-center gap-x-2 text-xs sm:text-sm text-gray-600">
-                  <p>{blog.date}</p>
-                  <p>{blog.author}</p>
+            <Zoom key={index}>
+              <div className="flex items-center gap-4 bg-white shadow-md rounded-lg my-2 p-3 sm:p-4">
+                <img
+                  className="w-14 h-14 sm:w-16 sm:h-16 rounded-md object-cover"
+                  src={blog.image}
+                  alt="blog"
+                />
+                <div className="space-y-1 sm:space-y-2 w-full">
+                  <div className="flex flex-wrap items-center gap-x-2 text-xs sm:text-sm text-gray-600">
+                    <p>{blog.date}</p>
+                    <p>{blog.author}</p>
+                  </div>
+                  <h1 className="font-semibold text-sm sm:text-base md:text-lg">
+                    {blog.blogTitle}
+                  </h1>
                 </div>
-                <h1 className="font-semibold text-sm sm:text-base md:text-lg">
-                  {blog.blogTitle}
-                </h1>
               </div>
-            </div>
+            </Zoom>
           ))}
         </div>
 
         {/* Right - Featured Image with Overlay */}
         <div className="relative w-full md:w-1/2 flex items-center justify-center">
           <div className="relative w-full">
-            <img
-              className="w-full h-full object-cover rounded-xl min-h-[350px] max-h-[550px] sm:min-h-[400px] md:h-full brightness-50"
-              src={blogImage}
-              alt="Featured Blog"
-            />
+            <Fade duration={3000}>
+              <img
+                className="w-full h-full object-cover rounded-xl min-h-[350px] max-h-[550px] sm:min-h-[400px] md:h-full brightness-50"
+                src={blogImage}
+                alt="Featured Blog"
+              />
+            </Fade>
             {/* Overlay Info */}
             <div className="absolute bottom-4 left-4 text-white max-w-[90%]">
               <h1 className="font-semibold text-sm sm:text-base md:text-lg mb-1">

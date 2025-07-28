@@ -1,3 +1,4 @@
+import { Zoom } from "react-awesome-reveal";
 import {
   FaShippingFast,
   FaWarehouse,
@@ -48,21 +49,20 @@ const Highlights = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-7xl mx-auto">
         {highlightsData.map((item, index) => (
-          <div
-            key={index}
-            className="relative rounded-xl overflow-hidden group h-64 md:h-96 cursor-pointer shadow-lg"
-          >
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-full object-cover transition duration-300 brightness-75 group-hover:brightness-50"
-            />
-            <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 text-center text-white px-4 transition duration-300">
-              {item.icon}
-              <h3 className="text-lg font-semibold">{item.title}</h3>
-              <p className="text-sm mt-1">{item.desc}</p>
+          <Zoom key={index} duration={1500}>
+            <div className="relative rounded-xl overflow-hidden group h-64 md:h-96 cursor-pointer shadow-lg">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover transition duration-300 brightness-75 group-hover:brightness-50"
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 text-center text-white px-4 transition duration-300">
+                {item.icon}
+                <h3 className="text-lg font-semibold">{item.title}</h3>
+                <p className="text-sm mt-1">{item.desc}</p>
+              </div>
             </div>
-          </div>
+          </Zoom>
         ))}
       </div>
     </div>

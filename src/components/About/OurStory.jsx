@@ -3,12 +3,13 @@ import team from "../../assets/team.png";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { stats } from "../../utils/blogData";
+import { Slide } from "react-awesome-reveal";
 
 const OurStory = () => {
   const [ref, inView] = useInView();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10 md:py-20 flex flex-col lg:flex-row items-center gap-12">
+    <div className="max-w-7xl mx-auto px-4 py-10 md:py-20 flex flex-col lg:flex-row items-center gap-12 mb-16">
       {/* Left Side with Stats */}
       <div className="w-full lg:w-1/2 space-y-6">
         <div className="max-w-md sm:max-w-lg space-y-8 mx-auto lg:mx-0">
@@ -19,10 +20,13 @@ const OurStory = () => {
                   <CountUp end={stat.value} suffix={stat.suffix} duration={2} />
                 )}
               </h1>
-              <h2 className="border-t-2 border-gray-400 w-40 sm:w-48 my-2 font-bold text-lg sm:text-xl">
-                {stat.title}
-              </h2>
-              <p className="text-sm sm:text-base leading-snug">{stat.desc}</p>
+              <hr className="border border-t border-gray-400 w-40" />
+              <Slide direction="up">
+                <h2 className="w-40 sm:w-48 my-2 font-bold text-lg sm:text-xl">
+                  {stat.title}
+                </h2>
+                <p className="text-sm sm:text-base leading-snug">{stat.desc}</p>
+              </Slide>
             </div>
           ))}
         </div>
