@@ -27,7 +27,7 @@ const AllReviews = [
 
 const Reviews = () => {
   return (
-    <div className="text-center my-20">
+    <div className="max-w-7xl mx-auto text-center my-20">
       <h1 className="text-2xl font-semibold">Reviews</h1>
       <p className="text-3xl font-bold mb-10 mt-3">What Users think about us</p>
       <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

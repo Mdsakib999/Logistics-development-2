@@ -10,7 +10,7 @@ const Contact = () => {
         bannerImage={bannerImage}
         title={"Contact Us"}
         paragraph={
-          "We’d love to hear from you! Whether you have a question, need assistance, or want to share feedback, feel free to reach out. Our team is here to help and will get back to you as soon as possible."
+          "We’d love to hear from you! Whether you have a question, need support, or simply want to share your thoughts, our team is here and ready to assist. Your inquiries are important to us, and we’re committed to responding promptly and helping you every step of the way."
         }
         buttonText={"Get in touch"}
       />

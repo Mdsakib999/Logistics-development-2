@@ -6,7 +6,7 @@ import ScrollToTopButton from "./utils/ScrollToTopButton";
 
 const App = () => {
   return (
-    <div className="max-w-7xl mx-auto font-inter">
+    <div className="font-inter">
       <InfoBar />
       <ScrollToTop />
       <div className="min-h-screen">

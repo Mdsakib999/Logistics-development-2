@@ -33,7 +33,7 @@ const allFeatures = [
 
 const Features = () => {
   return (
-    <div className="my-20 md:my-28 lg:my-32 px-4 min-h-[55vh]">
+    <div className="max-w-7xl mx-auto my-20 md:my-28 lg:my-40 px-4">
       <h1 className="text-2xl font-semibold text-center">Features</h1>
       <p className="text-3xl font-bold mb-10 mt-3 text-center">
         Why Partner With Us
