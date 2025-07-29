@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import { blogData } from "../../utils/blogData";
 import blogImage from "../../assets/blogImage.png";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const Blog = () => {
         {/* Left - Blog List */}
         <div className="w-full md:w-2/3 flex flex-col justify-center">
           {blogData.map((blog) => (
-            <Zoom key={blog.id}>
+            <Fade key={blog.id}>
               <div
                 onClick={() => navigate(`/blogs/${blog.id}`)}
                 className="flex items-center gap-4 bg-white shadow-md rounded-lg my-2 p-3 sm:p-4 cursor-pointer hover:shadow-xl transition"
@@ -41,7 +41,7 @@ const Blog = () => {
                   </h1>
                 </div>
               </div>
-            </Zoom>
+            </Fade>
           ))}
         </div>
 
