@@ -49,9 +49,7 @@ const Delivery = () => {
             <Zoom key={index}>
               <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
                 <Icon className="text-blue-400 mb-4" size={50} />
-                <h2 className="text-xl font-semibold mb-2 font-serif">
-                  {service.title}
-                </h2>
+                <h2 className="text-xl font-semibold mb-2 ">{service.title}</h2>
                 <p className="text-gray-700 text-sm mb-1">
                   {service.shortText}
                 </p>

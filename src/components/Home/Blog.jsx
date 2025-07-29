@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router";
 import { blogData } from "../../utils/blogData";
 import blogImage from "../../assets/blogImage.png";
 import { Fade, Zoom } from "react-awesome-reveal";
 
 const Blog = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-[#F3F7F9] p-4 sm:p-6 md:p-10 mb-20">
       {/* Section Title */}
@@ -17,9 +20,12 @@ const Blog = () => {
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-stretch gap-6 md:gap-8 my-10 md:my-20 px-2 md:px-0">
         {/* Left - Blog List */}
         <div className="w-full md:w-2/3 flex flex-col justify-center">
-          {blogData.map((blog, index) => (
-            <Zoom key={index}>
-              <div className="flex items-center gap-4 bg-white shadow-md rounded-lg my-2 p-3 sm:p-4">
+          {blogData.map((blog) => (
+            <Zoom key={blog.id}>
+              <div
+                onClick={() => navigate(`/blogs/${blog.id}`)}
+                className="flex items-center gap-4 bg-white shadow-md rounded-lg my-2 p-3 sm:p-4 cursor-pointer hover:shadow-xl transition"
+              >
                 <img
                   className="w-14 h-14 sm:w-16 sm:h-16 rounded-md object-cover"
                   src={blog.image}
@@ -39,7 +45,7 @@ const Blog = () => {
           ))}
         </div>
 
-        {/* Right - Featured Image with Overlay */}
+        {/* Right - Featured Image */}
         <div className="relative w-full md:w-1/2 flex items-center justify-center">
           <div className="relative w-full">
             <Fade duration={3000}>
