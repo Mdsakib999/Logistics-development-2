@@ -44,7 +44,7 @@ const Sustainability = () => {
                 alt="Green logistics"
                 className="rounded-2xl shadow-2xl w-full h-80 object-cover brightness-90"
               />
-              <div className="absolute -bottom-6 -right-0 md:-right-6 bg-white rounded-xl p-2 md:p-4 shadow-lg">
+              <div className="hidden lg:block absolute -bottom-6 -right-0 md:-right-6 bg-white rounded-xl p-2 md:p-4 shadow-lg">
                 <div className="flex items-center space-x-2">
                   <Award className="w-6 h-6 text-[#0778D4]" />
                   <span className="font-semibold text-gray-800">
