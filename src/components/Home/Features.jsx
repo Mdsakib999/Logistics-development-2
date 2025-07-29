@@ -49,7 +49,7 @@ const Features = () => {
               </div>
             </Zoom>
             <div className="text-center mt-5 w-full">
-              <h1 className="font-bold text-lg sm:text-xl md:text-2xl mb-2 sm:mb-4 font-serif">
+              <h1 className="font-bold text-lg sm:text-xl md:text-2xl mb-2 sm:mb-4 ">
                 {feature.title}
               </h1>
               <p className="max-w-[90vw] sm:max-w-[250px] md:max-w-[220px] mx-auto text-sm sm:text-base md:text-base break-words">

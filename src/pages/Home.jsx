@@ -3,8 +3,10 @@ import AboutUs from "../components/Home/AboutUs";
 import Blog from "../components/Home/Blog";
 import Faq from "../components/Home/Faq";
 import Features from "../components/Home/Features";
+import LogisticsOption from "../components/Home/LogisticsOption";
 import OurMission from "../components/Home/OurMission";
 import Solutions from "../components/Home/Solutions";
+import Support from "../components/Home/Support";
 import Banner from "../components/Shared/Banner";
 
 const Home = () => {
@@ -23,6 +25,8 @@ const Home = () => {
       <OurMission />
       <Blog />
       <Solutions />
+      <LogisticsOption />
+      <Support />
       <Faq />
     </div>
   );

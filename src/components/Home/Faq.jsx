@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import truck from "../../assets/truck.png";
 
 const faqData = [
   {
@@ -37,42 +38,65 @@ const Faq = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 pb-16">
-      {/* Section Title */}
-      <div className="text-center mb-12 space-y-4">
-        <h2 className="text-xl sm:text-2xl font-bold">FAQ</h2>
-        <h1 className="text-2xl sm:text-5xl font-bold">
-          Logistics <span className="text-[#417BE6]">Solution</span> Questions
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="text-center mb-16">
+        <h2 className="text-lg font-semibold text-blue-500 uppercase tracking-wide">
+          FAQ
+        </h2>
+        <h1 className="text-3xl sm:text-5xl font-extrabold text-gray-800">
+          Logistics <span className="text-blue-500">Solution</span> Questions
         </h1>
+        <p className="mt-4 text-gray-500 max-w-xl mx-auto">
+          Find answers to common questions about our shipping services,
+          tracking, costs, and more.
+        </p>
       </div>
 
-      {/* FAQ Accordion */}
-      <div className="space-y-4">
-        {faqData.map((item, index) => (
-          <div
-            key={index}
-            className="border border-gray-200 rounded-lg shadow-sm bg-white transition"
-          >
-            <button
-              onClick={() => toggle(index)}
-              className="w-full flex justify-between items-center p-4 text-left text-sm sm:text-base font-medium text-gray-700 hover:bg-gray-50 transition"
+      <div className="flex flex-col lg:flex-row items-center gap-10">
+        <div className="w-full lg:w-1/2 mt-10">
+          <h1 className="text-3xl font-bold">
+            Everything you need to about{" "}
+            <span className="text-blue-500">Swift</span>
+          </h1>
+          <p className="max-w-md text-sm mt-6 text-justify">
+            Discover valuable information and insights about shipping logistics
+            through our comprehensive FAQ section, where we address common
+            questions and provide expert guidance.
+          </p>
+          <img src={truck} alt="Truck" className="w-full rounded-xl" />
+        </div>
+
+        <div className="w-full lg:w-1/2 space-y-5">
+          {faqData.map((item, index) => (
+            <div
+              key={index}
+              className="border border-gray-200 rounded-xl bg-white shadow-md overflow-hidden transition-all"
             >
-              <span>{item.question}</span>
-              {activeIndex === index ? (
-                <FaMinus className="text-gray-500" />
-              ) : (
-                <FaPlus className="text-gray-500" />
-              )}
-            </button>
-            {activeIndex === index && (
-              <div className="p-4 pt-0 text-sm text-gray-600 transition-all duration-300 ease-in-out">
-                {item.answer}
+              <button
+                onClick={() => toggle(index)}
+                className="w-full flex justify-between items-center p-5 text-left text-base font-medium text-gray-800 hover:bg-gray-50 focus:outline-none"
+              >
+                <span>{item.question}</span>
+                {activeIndex === index ? (
+                  <FaMinus className="text-blue-600" />
+                ) : (
+                  <FaPlus className="text-blue-600" />
+                )}
+              </button>
+              <div
+                className={`transition-all duration-300 ease-in-out px-5 pt-0 overflow-hidden ${
+                  activeIndex === index ? "max-h-40 py-3" : "max-h-0"
+                }`}
+              >
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {item.answer}
+                </p>
               </div>
-            )}
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
