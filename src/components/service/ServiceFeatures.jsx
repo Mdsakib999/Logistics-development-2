@@ -62,12 +62,12 @@ const ServiceFeatures = () => {
           </div>
         </Fade>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 mb-20">
           {pricingTiers.map((tier, index) => (
             <div
               key={index}
               onClick={() => setSelectedTier(tier.name)}
-              className={`h-[450px] group relative bg-gradient-to-br from-white to-gray-50/30 rounded-2xl shadow-md border cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
+              className={`min-h-[400px] sm:min-h-[420px] md:min-h-[440px] group relative bg-gradient-to-br from-white to-gray-50/30 rounded-2xl shadow-md border cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
                 selectedTier === tier.name
                   ? "border-[#0778D4] shadow-xl transform scale-105"
                   : "border-gray-200/60 hover:border-gray-300"
