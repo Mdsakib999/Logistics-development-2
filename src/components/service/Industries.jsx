@@ -1,12 +1,13 @@
-import { Fade } from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 import {
   Factory,
   Heart,
   ShoppingBag,
   Car,
-  Building2,
   Truck,
   Users,
+  Wheat,
+  Plane,
 } from "lucide-react";
 
 const Industries = () => {
@@ -14,7 +15,7 @@ const Industries = () => {
     {
       icon: Heart,
       title: "Healthcare & Pharma",
-      desc: "Temperature-controlled logistics for medical supplies and pharmaceuticals with full compliance",
+      desc: "Temperature-controlled logistics for medical supplies with full compliance",
       image:
         "https://t3.ftcdn.net/jpg/12/18/16/32/240_F_1218163213_i55DJCts6wMfXCQgsGhzHp9Yzl4T0Crg.jpg",
       stats: "99.9% On-time",
@@ -43,6 +44,22 @@ const Industries = () => {
         "https://t4.ftcdn.net/jpg/12/82/56/91/240_F_1282569160_LE2GvUhPG4oOQjXLlq29HJWWwFkQkC7N.jpg",
       stats: "24/7 Operations",
     },
+    {
+      icon: Plane,
+      title: "Aerospace & Aviation",
+      desc: "High-value, time-critical logistics tailored for aerospace parts and support equipment",
+      image:
+        "https://au.atoshipping.com/wp-content/uploads/2023/06/Aerospace-logistics-services-1.webp",
+      stats: "99.5% Delivery Accuracy",
+    },
+    {
+      icon: Wheat,
+      title: "Agriculture & Food",
+      desc: "End-to-end cold chain logistics for perishable goods and farm-to-table deliveries",
+      image:
+        "https://img.foodlogistics.com/files/base/acbm/scn/image/2022/04/Deyan_Georgiev___stock.adobe.com.62534fa2d6cf3.png?auto=format%2Ccompress&q=70",
+      stats: "Freshness Guaranteed",
+    },
   ];
 
   return (
@@ -50,29 +67,28 @@ const Industries = () => {
       <div className="max-w-7xl mx-auto px-4">
         <Fade direction="up">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-[#0778D4] rounded-full mb-6">
-              <Building2 className="w-10 h-10 text-white" />
+            <div className="flex items-center justify-center mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
+                  Industries We Serve
+                </span>
+              </div>
             </div>
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">
-              Industries We Serve
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+
+            <p className="text-3xl text-gray-600 max-w-xl mx-auto">
               Delivering{" "}
               <span className="text-[#0778D4] font-semibold">
                 specialized solutions
               </span>{" "}
-              tailored to meet the unique demands of every industry sector
+              for every industry’s needs.
             </p>
           </div>
         </Fade>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {industries.map((industry, index) => (
-            <Fade
-              key={index}
-              direction={index % 2 === 0 ? "left" : "right"}
-              delay={index * 150}
-            >
+            <Zoom key={index} duration={1500}>
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <div className="relative h-48">
                   <img
@@ -98,7 +114,7 @@ const Industries = () => {
                   </div>
                 </div>
               </div>
-            </Fade>
+            </Zoom>
           ))}
         </div>
 

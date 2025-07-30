@@ -1,37 +1,26 @@
 import { Fade } from "react-awesome-reveal";
-import {
-  Leaf,
-  Recycle,
-  Zap,
-  Factory,
-  Heart,
-  ShoppingBag,
-  Car,
-  Building2,
-  Truck,
-  Globe,
-  Users,
-  Award,
-} from "lucide-react";
+import { Leaf, Recycle, Zap, Award } from "lucide-react";
 
 const Sustainability = () => {
   return (
-    <div className="bg-gradient-to-br from-green-50 to-blue-50 py-20">
+    <div className="bg-gradient-to-br from-blue-50 to-blue-50 py-20">
       <div className="max-w-7xl mx-auto px-4">
         <Fade direction="up">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-[#0778D4] rounded-full mb-6">
-              <Globe className="w-10 h-10 text-white" />
+            <div className="flex items-center justify-center mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
+                  Sustainability First
+                </span>
+              </div>
             </div>
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">
-              Sustainability First
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Leading the way towards{" "}
+            <p className="text-3xl text-gray-600 max-w-2xl mx-auto">
+              Pioneering{" "}
               <span className="text-[#0778D4] font-semibold">
                 carbon-neutral logistics
               </span>{" "}
-              with innovative green solutions for a sustainable future
+              with sustainable green solutions.
             </p>
           </div>
         </Fade>
