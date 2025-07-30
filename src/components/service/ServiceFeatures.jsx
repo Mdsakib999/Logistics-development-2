@@ -49,10 +49,16 @@ const ServiceFeatures = () => {
       <div className="max-w-7xl mx-auto px-4">
         <Fade direction="up">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              Service Pricing
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <div className="flex items-center justify-center mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
+                  Service Pricing
+                </span>
+              </div>
+            </div>
+
+            <p className="text-3xl text-gray-600 max-w-xl mx-auto">
               Transparent pricing with{" "}
               <span className="text-[#0778D4] font-semibold">
                 no hidden fees

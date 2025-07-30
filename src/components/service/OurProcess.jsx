@@ -6,7 +6,14 @@ const OurProcess = () => {
   return (
     <div className="max-w-6xl mx-auto py-16 px-4">
       <div className="text-center mb-12">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">Our Process</h1>
+        <div className="flex items-center justify-center mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
+            <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+            <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
+              Our Process{" "}
+            </span>
+          </div>
+        </div>
         <p className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-600 max-w-2xl mx-auto">
           Our{" "}
           <span className="text-[#0778D4] font-semibold">

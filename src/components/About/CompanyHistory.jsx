@@ -5,7 +5,14 @@ const CompanyHistory = () => {
     <div className="bg-[#F3F7F9] py-10">
       {/* Header */}
       <div className="text-center mt-10 sm:mt-16 space-y-4 px-4">
-        <h2 className="text-lg sm:text-2xl font-bold">A short Brief</h2>
+        <div className="flex items-center justify-center mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
+            <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+            <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
+              A short Brief
+            </span>
+          </div>
+        </div>
         <h1 className="text-xl sm:text-5xl font-bold leading-tight">
           Our Company <span className="text-[#417BE6]">History</span>
         </h1>

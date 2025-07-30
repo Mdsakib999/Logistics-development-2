@@ -37,9 +37,17 @@ const services = [
 const Delivery = () => {
   return (
     <div className="max-w-7xl mx-auto my-20 px-4">
-      <h1 className="text-2xl font-semibold text-center">Services</h1>
-      <p className="text-3xl font-bold mb-10 mt-3 text-center">
-        Transportation services which we provide to our customers
+      <div className="flex items-center justify-center mb-6">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
+          <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+          <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
+            Services{" "}
+          </span>
+        </div>
+      </div>
+      <p className="max-w-xl w-full mx-auto text-3xl font-bold mb-10 mt-3 text-center">
+        Transportation services which we provide to{" "}
+        <span className="text-[#0778D4]">Our Customers</span>
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
