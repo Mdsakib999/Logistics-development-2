@@ -53,12 +53,18 @@ const Support = () => {
         {/* Customer Support Section */}
         <div className="relative">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Headphones className="w-4 h-4 mr-2" />
-              24/7 Support
+            <div className="flex items-center justify-center mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                <span className="flex items-center py-1.5 text-blue-700 font-medium text-sm uppercase tracking-wider">
+                  <Headphones className="w-4 h-4 mr-2" />
+                  24/7 Support
+                </span>
+              </div>
             </div>
+
             <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
-              Always Here to Help
+              Always Here to <span className="text-[#0778D4]">Help</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Multiple channels to ensure you get the support you need, when you
