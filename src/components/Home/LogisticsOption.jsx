@@ -21,12 +21,17 @@ const LogisticsOption = () => {
 
           <div className="relative z-10 p-8 sm:p-12">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center bg-gradient-to-r from-[#0778D4] to-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <Star className="w-4 h-4 mr-2" />
-                Enterprise Solutions
+              <div className="flex items-center justify-center mb-6">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                  <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
+                    Enterprise Solution
+                  </span>
+                </div>
               </div>
               <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
-                Built for Complex Logistics
+                Built for Complex{" "}
+                <span className="text-[#0778D4]">Logistics</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Scalable solutions designed for businesses with demanding supply
@@ -94,17 +99,6 @@ const LogisticsOption = () => {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="text-center mt-8 sm:mt-12">
-              <button className="group relative bg-gradient-to-r from-[#0778D4] to-blue-600 text-white px-4 sm:px-8 py-3 sm:py-4 rounded-2xl font-bold text-base sm:text-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl w-full max-w-xs sm:max-w-md mx-auto">
-                <div className="flex items-center justify-center">
-                  <CreditCard className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 group-hover:rotate-12 transition-transform duration-300" />
-                  Request Custom Quote
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                </div>
-                <div className="absolute inset-0 rounded-2xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
             </div>
           </div>
         </div>

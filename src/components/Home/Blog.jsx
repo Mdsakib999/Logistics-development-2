@@ -1,69 +1,124 @@
-import { useNavigate } from "react-router";
 import { blogData } from "../../utils/blogData";
-import blogImage from "../../assets/blogImage.png";
-import { Fade } from "react-awesome-reveal";
 
-const Blog = () => {
-  const navigate = useNavigate();
+const categoryColors = {
+  "Last-Mile Delivery": "bg-blue-100 text-blue-800",
+  Sustainability: "bg-green-100 text-green-800",
+  Technology: "bg-purple-100 text-purple-800",
+  "Cold Chain": "bg-cyan-100 text-cyan-800",
+  International: "bg-orange-100 text-orange-800",
+  Automation: "bg-red-100 text-red-800",
+};
+
+const BlogCardSystem = () => {
+  const handleCardClick = (blogId) => {
+    window.location.href = `/blogs/${blogId}`;
+  };
 
   return (
-    <div className="bg-[#F3F7F9] p-4 sm:p-6 md:p-10 mb-20">
-      {/* Section Title */}
-      <div className="text-center mt-10 sm:mt-16 space-y-4">
-        <h2 className="text-xl sm:text-2xl font-bold">Our Blog</h2>
-        <h1 className="text-2xl sm:text-4xl font-bold">
-          Update Blogs & <span className="text-[#417BE6]">News</span>
-        </h1>
-      </div>
-
-      {/* Main Content Grid */}
-      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-stretch gap-6 md:gap-8 my-10 md:my-20 px-2 md:px-0">
-        {/* Left - Blog List */}
-        <div className="w-full md:w-2/3 flex flex-col justify-center">
-          {blogData.map((blog) => (
-            <Fade key={blog.id}>
-              <div
-                onClick={() => navigate(`/blogs/${blog.id}`)}
-                className="flex items-center gap-4 bg-white shadow-md rounded-lg my-2 p-3 sm:p-4 cursor-pointer hover:shadow-xl transition"
-              >
-                <img
-                  className="w-14 h-14 sm:w-16 sm:h-16 rounded-md object-cover"
-                  src={blog.image}
-                  alt="blog"
-                />
-                <div className="space-y-1 sm:space-y-2 w-full">
-                  <div className="flex flex-wrap items-center gap-x-2 text-xs sm:text-sm text-gray-600">
-                    <p>{blog.date}</p>
-                    <p>{blog.author}</p>
-                  </div>
-                  <h1 className="font-semibold text-sm sm:text-base md:text-lg">
-                    {blog.blogTitle}
-                  </h1>
-                </div>
-              </div>
-            </Fade>
-          ))}
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+      <div className="relative z-10 p-4 sm:p-6 lg:p-8">
+        {/* Header Section */}
+        <div className="text-center py-12 mb-8">
+          <div className="flex items-center justify-center mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
+              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+              <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
+                Latest Updates
+              </span>
+            </div>
+          </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+            Logistics & Shipping
+            <br />
+            <span className="text-[#0778D4]">Industry Insights</span>
+          </h1>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+            Stay ahead in the logistics industry with expert insights on
+            shipping, supply chain, and delivery innovations
+          </p>
         </div>
 
-        {/* Right - Featured Image */}
-        <div className="relative w-full md:w-1/2 flex items-center justify-center">
-          <div className="relative w-full">
-            <Fade duration={3000}>
-              <img
-                className="w-full h-full object-cover rounded-xl min-h-[350px] max-h-[550px] sm:min-h-[400px] md:h-full brightness-50"
-                src={blogImage}
-                alt="Featured Blog"
-              />
-            </Fade>
-            {/* Overlay Info */}
-            <div className="absolute bottom-4 left-4 text-white max-w-[90%]">
-              <h1 className="font-semibold text-sm sm:text-base md:text-lg mb-1">
-                {blogData[0].blogTitle}
-              </h1>
-              <div className="flex items-center gap-x-2 text-xs sm:text-sm">
-                <p>{blogData[0].date}</p>
-                <p>{blogData[0].author}</p>
-              </div>
+        <div className="max-w-7xl mx-auto">
+          {/* Blog Cards Grid */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+              <div className="w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full mr-4"></div>
+              Latest Articles
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              {blogData.map((blog, index) => (
+                <div
+                  key={blog.id}
+                  onClick={() => handleCardClick(blog.id)}
+                  className="group bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 border border-white/50"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  {/* Image */}
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={blog.image}
+                      alt={blog.blogTitle}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                    {/* Category Badge */}
+                    <div className="absolute top-3 left-3">
+                      <span
+                        className={`px-2 py-1 rounded-full text-xs font-medium ${
+                          categoryColors[blog.category]
+                        }`}
+                      >
+                        {blog.category}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-5 space-y-3">
+                    <div className="flex items-center justify-between text-sm text-gray-500">
+                      <span>{blog.date}</span>
+                      <span>{blog.readTime}</span>
+                    </div>
+
+                    <h3 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-300 leading-snug line-clamp-2">
+                      {blog.blogTitle}
+                    </h3>
+
+                    <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
+                      {blog.excerpt}
+                    </p>
+
+                    <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-semibold text-xs">
+                          {blog.author.charAt(0)}
+                        </div>
+                        <span className="text-sm font-medium text-gray-700">
+                          {blog.author}
+                        </span>
+                      </div>
+
+                      <div className="text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all duration-300">
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -72,4 +127,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogCardSystem;

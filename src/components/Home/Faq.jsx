@@ -40,11 +40,16 @@ const Faq = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-16">
-        <h2 className="text-lg font-semibold text-blue-500 uppercase tracking-wide">
-          FAQ
-        </h2>
+        <div className="flex items-center justify-center mb-6">
+          <div className="inline-flex items-center gap-x-3 px-8 py-2 bg-blue-50 rounded-full border border-blue-100">
+            <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+            <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
+              FAQ
+            </span>
+          </div>
+        </div>
         <h1 className="text-3xl sm:text-5xl font-extrabold text-gray-800">
-          Logistics <span className="text-blue-500">Solution</span> Questions
+          Logistics <span className="text-[#0778D4]">Solution</span> Questions
         </h1>
         <p className="mt-4 text-gray-500 max-w-xl mx-auto">
           Find answers to common questions about our shipping services,
@@ -56,7 +61,7 @@ const Faq = () => {
         <div className="w-full lg:w-1/2 mt-10">
           <h1 className="text-3xl font-bold">
             Everything you need to about{" "}
-            <span className="text-blue-500">Swift</span>
+            <span className="text-[#0778D4]">Swift</span>
           </h1>
           <p className="max-w-md text-sm mt-6 text-justify">
             Discover valuable information and insights about shipping logistics
