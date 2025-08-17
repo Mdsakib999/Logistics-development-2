@@ -29,11 +29,11 @@ const LogisticsOption = () => {
                   </span>
                 </div>
               </div>
-              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
+              <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
                 Built for Complex{" "}
                 <span className="text-[#0778D4]">Logistics</span>
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Scalable solutions designed for businesses with demanding supply
                 chain requirements
               </p>

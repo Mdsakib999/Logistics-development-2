@@ -63,10 +63,10 @@ const Support = () => {
               </div>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
+            <h2 className="text-2xl md:text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
               Always Here to <span className="text-[#0778D4]">Help</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Multiple channels to ensure you get the support you need, when you
               need it
             </p>

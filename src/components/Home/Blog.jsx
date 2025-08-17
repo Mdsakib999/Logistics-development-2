@@ -27,12 +27,12 @@ const BlogCardSystem = () => {
               </span>
             </div>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-4">
             Logistics & Shipping
             <br />
             <span className="text-[#0778D4]">Industry Insights</span>
           </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-600 text-sm md:text-lg max-w-2xl mx-auto leading-relaxed">
             Stay ahead in the logistics industry with expert insights on
             shipping, supply chain, and delivery innovations
           </p>

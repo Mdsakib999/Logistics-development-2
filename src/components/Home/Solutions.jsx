@@ -53,7 +53,7 @@ const Solutions = () => {
           </span>
         </div>
 
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+        <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold leading-tight">
           Logistics{" "}
           <span className="relative">
             <span className="text-[#0778D4]">Solutions</span>
@@ -61,7 +61,7 @@ const Solutions = () => {
           </span>
         </h1>
 
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+        <p className="text-gray-600 text-sm md:text-lg max-w-2xl mx-auto leading-relaxed">
           Comprehensive logistics solutions tailored to meet your business needs
           with precision and reliability
         </p>

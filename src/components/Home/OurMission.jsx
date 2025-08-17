@@ -13,7 +13,7 @@ const OurMission = () => {
       {/* Split Screen Layout */}
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 min-h-[600px] rounded-3xl overflow-hidden shadow-2xl">
         {/* Left Side - Interactive Content */}
-        <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 p-8 lg:p-12 flex flex-col justify-between">
+        <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-gray-950 p-8 lg:p-12 flex flex-col justify-between">
           {/* Animated Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div
@@ -41,14 +41,14 @@ const OurMission = () => {
               </span>
             </div>
 
-            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-2xl md:text-5xl font-bold text-white mb-6 leading-tight">
               Connecting The World,
               <span className="block text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text">
                 One Shipment At A Time
               </span>
             </h1>
 
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-sm md:text-xl text-gray-300 mb-8 leading-relaxed">
               We don't just deliver packages – we deliver possibilities, dreams,
               and connections across continents.
             </p>
@@ -90,10 +90,10 @@ const OurMission = () => {
 
             <Link
               to="/about"
-              className="group inline-flex items-center gap-3 bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl mb-3"
+              className="group inline-flex items-center gap-3 bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl mb-3"
             >
               Explore Our Journey
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300">
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center duration-300">
                 <BsArrowRight className="text-white text-sm" />
               </div>
             </Link>
