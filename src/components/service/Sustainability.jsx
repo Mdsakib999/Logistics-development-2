@@ -15,7 +15,7 @@ const Sustainability = () => {
                 </span>
               </div>
             </div>
-            <p className="text-3xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-2xl md:text-4xl lg:text-5xl text-gray-600 max-w-2xl mx-auto">
               Pioneering{" "}
               <span className="text-[#0778D4] font-semibold">
                 carbon-neutral logistics
@@ -54,7 +54,7 @@ const Sustainability = () => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
                     Zero Emission Goals
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-sm md:text-lg">
                     Committed to achieving net-zero carbon emissions by 2030
                     through electric fleet transition and renewable energy
                     adoption.
@@ -70,7 +70,7 @@ const Sustainability = () => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
                     Circular Economy
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-sm md:text-lg">
                     Implementing sustainable packaging solutions and waste
                     reduction programs across our entire supply chain network.
                   </p>
@@ -85,7 +85,7 @@ const Sustainability = () => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
                     Smart Technology
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-sm md:text-lg">
                     AI-powered route optimization and IoT sensors to minimize
                     fuel consumption and reduce environmental impact.
                   </p>

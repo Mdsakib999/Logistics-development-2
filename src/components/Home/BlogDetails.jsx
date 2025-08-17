@@ -58,24 +58,6 @@ const BlogDetails = () => {
         onClick={() => window.scrollTo({ top: 600, behavior: "smooth" })}
       />
 
-      {/* Breadcrumb */}
-      <div className="bg-gray-50 border-b">
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3">
-          <nav className="flex items-center space-x-2 text-sm">
-            <button
-              onClick={() => navigate("/blogs")}
-              className="text-blue-600 hover:text-blue-800 transition-colors"
-            >
-              Blogs
-            </button>
-            <ChevronRight className="w-4 h-4 text-gray-400" />
-            <span className="text-gray-600 truncate">
-              {blog.blogTitle.replace("📝 ", "").substring(0, 30)}...
-            </span>
-          </nav>
-        </div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 py-8">
           {/* Main Content */}
@@ -89,7 +71,7 @@ const BlogDetails = () => {
                 </span>
               </div>
 
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+              <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
                 {blog.blogTitle.replace("📝 ", "")}
               </h1>
 
@@ -97,7 +79,7 @@ const BlogDetails = () => {
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 pb-6 border-b border-gray-200">
                 <div className="flex items-center space-x-3 mb-4 sm:mb-0">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-sm sm:text-lg font-semibold text-white">
+                    <span className="text-sm md:text-lg font-semibold text-white">
                       {blog.author.split(" ")[1][0]}
                     </span>
                   </div>
@@ -142,12 +124,12 @@ const BlogDetails = () => {
 
             {/* Article Content */}
             <div className="prose prose-gray max-w-none mb-8">
-              <div className="text-lg text-justify leading-relaxed text-gray-700 font-light mb-8">
+              <div className="text-sm md:text-lg text-justify leading-relaxed text-gray-700 font-light mb-8">
                 {blog.excerpt}
               </div>
 
               {/* Sample additional content to make it less empty */}
-              <div className="space-y-6 text-gray-700 leading-relaxed">
+              <div className="text-sm md:text-lg space-y-6 text-gray-700 leading-relaxed">
                 <p>
                   The logistics industry continues to evolve at an unprecedented
                   pace, driven by technological innovations and changing

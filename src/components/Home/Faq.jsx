@@ -57,7 +57,7 @@ const Faq = () => {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center gap-10">
+      <div className="flex flex-col md:flex-row items-center gap-10">
         <div className="w-full lg:w-1/2 mt-10">
           <h1 className="text-3xl font-bold">
             Everything you need to about{" "}
