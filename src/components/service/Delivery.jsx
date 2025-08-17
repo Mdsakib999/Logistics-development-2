@@ -45,7 +45,7 @@ const Delivery = () => {
           </span>
         </div>
       </div>
-      <p className="max-w-xl w-full mx-auto text-2xl md:text-4xl lg:text-5xl font-bold mb-10 mt-3 text-center">
+      <p className="max-w-xl w-full mx-auto text-2xl md:text-4xl font-bold mb-10 mt-3 text-center">
         Transportation services which we provide to{" "}
         <span className="text-[#0778D4]">Our Customers</span>
       </p>
