@@ -31,21 +31,21 @@ const AllReviews = [
   {
     authorImage: authorImage,
     authorName: "Michael Johnson",
-    authorDesignation: "Operations Manager",
+    authorDesignation: "Operations Head",
     authorComment:
-      "Outstanding logistics support! They handled our international shipments. Communication was good throughout the process.",
+      "Outstanding logistics support! They handled our shipments. Communication was excellent.",
   },
   {
     authorImage: authorImage,
     authorName: "Sarah Williams",
-    authorDesignation: "E-commerce Director",
+    authorDesignation: "E-commerce MD",
     authorComment:
       "Best shipping partner we've worked with. Fast, reliable, and cost-effective solutions for our business needs.",
   },
   {
     authorImage: authorImage,
     authorName: "David Brown",
-    authorDesignation: "Supply Chain Head",
+    authorDesignation: "Supply Head",
     authorComment:
       "Impressed by their technology integration and real-time tracking capabilities. Made our logistics management seamless and efficient.",
   },
@@ -59,7 +59,7 @@ const AllReviews = [
   {
     authorImage: authorImage,
     authorName: "Robert Miller",
-    authorDesignation: "Import/Export Specialist",
+    authorDesignation: "Md, SM It",
     authorComment:
       "Professional handling of complex shipments. Their expertise in customs and documentation saved us time and money.",
   },
@@ -78,12 +78,12 @@ const Reviews = () => {
         </div>
       </div>
 
-      <p className="text-2xl md:text-4xl lg:text-5xl font-bold mb-14">
+      <p className="text-2xl md:text-4xl max-w-sm w-full mx-auto font-bold mb-14">
         What Users <span className="text-[#0778D4]">Think About Us</span>
       </p>
 
       {/* Swiper Container */}
-      <div className="pb-32">
+      <div className="pb-10 md:pb-16">
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={30}

@@ -76,7 +76,7 @@ const Industries = () => {
               </div>
             </div>
 
-            <p className="text-2xl md:text-4xl lg:text-5xl text-gray-600 max-w-xl mx-auto">
+            <p className="text-2xl md:text-4xl text-gray-600 max-w-2xl mx-auto">
               Delivering{" "}
               <span className="text-[#0778D4] font-semibold">
                 specialized solutions
