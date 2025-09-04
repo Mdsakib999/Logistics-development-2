@@ -144,17 +144,17 @@ const OurMission = () => {
           <div className="absolute inset-0 bg-gradient-to-l from-transparent via-black/20 to-black/40"></div>
 
           {/* Floating Cards */}
-          <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl animate-float">
+          {/* <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl animate-float">
             <div className="flex items-center gap-3">
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
               <span className="text-sm font-semibold text-gray-800">
                 Live Tracking Active
               </span>
             </div>
-          </div>
+          </div> */}
 
           <div
-            className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl animate-float"
+            className="absolute bottom-[40%] left-[40%] bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl animate-float"
             style={{ animationDelay: "1s" }}
           >
             <div className="text-2xl flex items-center gap-x-2 font-bold text-gray-800 mb-1">

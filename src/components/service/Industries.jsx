@@ -108,10 +108,7 @@ const Industries = () => {
                     {industry.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{industry.desc}</p>
-                  <div className="flex items-center text-[#0778D4] font-semibold hover:text-blue-800 cursor-pointer">
-                    <span>Learn More</span>
-                    <Truck className="w-4 h-4 ml-2" />
-                  </div>
+
                 </div>
               </div>
             </Zoom>
@@ -129,7 +126,7 @@ const Industries = () => {
               needs. Get a custom solution for your industry today.
             </p>
             <button className="bg-white text-[#0778D4] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Get Industry Quote
+              Contact Us
             </button>
           </div>
         </Fade>

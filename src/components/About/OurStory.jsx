@@ -37,18 +37,16 @@ const OurStory = () => {
         <div className="relative bg-black text-white rounded-2xl px-4 sm:px-6 pt-16 sm:pt-20 pb-8 sm:pb-10 min-h-[400px] sm:min-h-[450px] flex flex-col sm:flex-row sm:items-start sm:justify-end">
           {/* Text Content */}
           <div className="w-full sm:w-[90%] lg:w-1/2 mt-6 sm:mt-10 space-y-2">
-            <h1 className="text-xl sm:text-3xl font-bold">Our Story</h1>
+            <h1 className="text-xl sm:text-3xl font-bold">Unsere Geschichte</h1>
             <h2 className="text-lg sm:text-2xl font-semibold text-[#417BE6]">
-              Delivering Trust Through Every Mile
+              Vertrauen schaffen – Meile für Meile
             </h2>
             <p className="text-gray-400 text-xs sm:text-sm text-justify mt-2">
-              Founded with a vision to simplify global logistics, we’ve grown
-              into a trusted name in freight forwarding, warehousing, and supply
-              chain management.
+              Gegründet mit dem Ziel, die Logistik in Europa einfacher zu gestalten, hat sich Swift Cargo zu einem verlässlichen Partner für Spedition, Lagerhaltung und ganzheitliche Lieferkettenlösungen entwickelt.
             </p>
             <Link to="/service">
               <button className="mt-4 bg-[#0778D4] text-white hover:bg-white hover:text-[#0778D4] border border-[#0778D4] duration-300 rounded-full px-5 py-2 text-xs sm:text-sm">
-                Explore Our Services
+                Unsere Dienstleistungen entdecken
               </button>
             </Link>
           </div>

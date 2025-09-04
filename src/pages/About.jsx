@@ -1,6 +1,6 @@
 import bannerImage from "../assets/about.jpg";
 import CompanyHistory from "../components/About/CompanyHistory";
-import Highlights from "../components/About/Highlights";
+// import Highlights from "../components/About/Highlights";
 // import NewsLetter from "../components/About/NewsLetter";
 import OurStory from "../components/About/OurStory";
 import Banner from "../components/Shared/Banner";
@@ -10,15 +10,15 @@ const About = () => {
     <div>
       <Banner
         bannerImage={bannerImage}
-        title={"About Us"}
+        title={"Über uns"}
         paragraph={
-          "We’re a dedicated team driven by a passion for ensuring goods are moved swiftly, securely, and efficiently across the globe. With years of hands-on experience in the logistics industry, our focus lies in delivering consistently reliable services, leveraging cutting-edge technologies, and crafting tailored solutions for each client. We don’t just transport shipments—we build lasting trust, one delivery at a time."
+          "Spedition Bernhard GmbH steht für ganzheitliche Transportdienstleistungen in Europa. Unser Schwerpunkt liegt auf Luft- und Seefracht, wobei wir für reibungslose Abläufe, sichere Warenbewegungen und termingerechte Anlieferungen sorgen. Mit einem engagierten Team und einer flexiblen Serviceorientierung gestalten wir die europäische Logistik einfach, verlässlich und kundenfreundlich."
         }
-        buttonText={"Join Us"}
+        buttonText={"Jetzt Kontakt aufnehmen"}
       />
       <OurStory />
       <CompanyHistory />
-      <Highlights />
+      {/* <Highlights /> */}
       {/* <NewsLetter /> */}
     </div>
   );

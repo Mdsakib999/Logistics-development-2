@@ -6,6 +6,7 @@ import Service from "../pages/Service";
 import Contact from "../pages/Contact";
 import BlogDetails from "../components/Home/BlogDetails";
 import ErrorPage from "../pages/ErrorPage";
+import ImpressumDatenschutz from "../pages/ImpressumDatenschutz";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         Component: Contact,
+      },
+      {
+        path: "/impressumDatenschutz",
+        Component: ImpressumDatenschutz,
       },
       {
         path: "/blogs/:id",

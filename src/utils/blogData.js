@@ -83,20 +83,20 @@ export const stats = [
   {
     value: 100,
     suffix: "%",
-    title: "On-Time Delivery",
-    desc: "We guarantee timely delivery for every shipment, ensuring your business never skips a beat.",
+    title: "Termingerechte Lieferung",
+    desc: "Wir garantieren die pünktliche Lieferung jeder Sendung, damit Ihr Geschäft keinen Takt verpasst",
   },
   {
-    value: 650,
+    value: 870,
     suffix: "+",
-    title: "Global Clients",
-    desc: "Trusted by clients worldwide who depend on us for reliable and cost-effective logistics.",
+    title: "internationale Kunden",
+    desc: "Unternehmen weltweit schätzen uns für zuverlässige und kosteneffiziente Logistiklösungen.",
   },
   {
     value: 24,
     suffix: "/7",
-    title: "Customer Support",
-    desc: "Our support team is always available to help you with logistics inquiries or emergencies.",
+    title: "Kundensupport rund um die Uhr",
+    desc: "Tag und Nacht steht unser Team bereit, um Sie bei Fragen, Sendungen oder dringenden Logistikanliegen zu unterstützen.",
   },
 ];
 

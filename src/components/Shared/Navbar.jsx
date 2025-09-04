@@ -4,6 +4,8 @@ import Button from "./Button";
 import { FaBars } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 
+import logoWhite from "../../assets/bernhardlogistikLogoWhite.png";
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,9 +13,9 @@ const Navbar = () => {
   const location = useLocation();
 
   const navLinks = [
-    { to: "/", label: "Home" },
-    { to: "/about", label: "About" },
-    { to: "/service", label: "Service" },
+    { to: "/", label: "Startseite" },
+    { to: "/about", label: "Über uns" },
+    { to: "/service", label: "Dienstleistungen" },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -38,10 +40,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between text-white">
         {/* Logo */}
         <Link
-          className="text-2xl sm:text-3xl lg:text-4xl  font-bold hover:text-blue-300 transition-colors duration-200"
+          className="max-w-[220px] transition-colors duration-200"
           to="/"
         >
-          Swift
+         <img src={logoWhite} alt="" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -67,7 +69,7 @@ const Navbar = () => {
         {/* Desktop Contact Button */}
         <div className="hidden lg:block">
           <Link to="/contact">
-            <Button buttonText="Contact" />
+            <Button buttonText="Kontakt" />
           </Link>
         </div>
 

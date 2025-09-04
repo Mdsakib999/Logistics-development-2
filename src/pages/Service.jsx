@@ -22,8 +22,8 @@ const Service = () => {
       <OurProcess />
       <Sustainability />
       <Industries />
-      <ServiceFeatures />
-      <Reviews />
+      {/* <ServiceFeatures /> */}
+      {/* <Reviews /> */}
     </div>
   );
 };

@@ -4,3 +4,10 @@
 @theme{
     --font-inter:"Inter"
 }
+
+.b{
+    border: 2px solid black;
+}
+.bb{
+    border: 2px solid red;
+}

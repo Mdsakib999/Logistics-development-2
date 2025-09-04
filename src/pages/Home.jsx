@@ -7,6 +7,7 @@ import LogisticsOption from "../components/Home/LogisticsOption";
 import OurMission from "../components/Home/OurMission";
 import Solutions from "../components/Home/Solutions";
 import Support from "../components/Home/Support";
+import Reviews from "../components/service/Reviews";
 import Banner from "../components/Shared/Banner";
 
 const Home = () => {
@@ -23,11 +24,12 @@ const Home = () => {
       <Features />
       <AboutUs />
       <OurMission />
-      <Blog />
+      {/* <Blog /> */}
       <Solutions />
-      <LogisticsOption />
+      {/* <LogisticsOption /> */}
       <Support />
       <Faq />
+      <Reviews></Reviews>
     </div>
   );
 };
