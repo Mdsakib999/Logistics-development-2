@@ -10,58 +10,58 @@ const AllReviews = [
   {
     authorImage: authorImage,
     authorName: "Jane Cooper",
-    authorDesignation: "CEO & Founder",
+    authorDesignation: "CEO & Gründer",
     authorComment:
-      "Shipping TNC provided exceptional service. Their attention to detail and reliability made them our go-to logistics partner.",
+      "Seit wir mit Swift Cargo arbeiten, laufen unsere Lieferketten reibungslos – pünktlich und zuverlässig wie nie zuvor.",
   },
   {
-    authorImage: authorImage,
+    authorImage: 'https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA4L2pvYjEwMzQtZWxlbWVudC0wNy00MDMucG5n.png',
     authorName: "John Doe",
-    authorDesignation: "Business Owner",
+    authorDesignation: "Geschäftsinhaber",
     authorComment:
-      "Very professional team, shipment was delivered on time. Highly recommend Shipping TNC!",
+      "Seit wir mit Swift Cargo arbeiten, laufen unsere Lieferketten reibungslos – pünktlich und zuverlässig wie nie zuvor.",
   },
   {
-    authorImage: authorImage,
+    authorImage: 'https://t4.ftcdn.net/jpg/04/31/64/75/360_F_431647519_usrbQ8Z983hTYe8zgA7t1XVc5fEtqcpa.jpg',
     authorName: "Alice Smith",
-    authorDesignation: "Entrepreneur",
+    authorDesignation: "Unternehmer",
     authorComment:
-      "Super smooth experience. Their tracking system kept me updated and stress-free.",
+      "Die Sendungsverfolgung in Echtzeit gibt uns jederzeit volle Transparenz. Ein Service, auf den wir uns verlassen können.",
   },
   {
-    authorImage: authorImage,
+    authorImage: "https://img.freepik.com/premium-photo/portrait-smiling-young-man-looking-camera_33839-1731.jpg",
     authorName: "Michael Johnson",
-    authorDesignation: "Operations Head",
+    authorDesignation: "Betriebsleiter",
     authorComment:
-      "Outstanding logistics support! They handled our shipments. Communication was excellent.",
+      "Hervorragender Kundensupport – rund um die Uhr erreichbar und immer lösungsorientiert.",
   },
   {
-    authorImage: authorImage,
+    authorImage: 'https://plus.unsplash.com/premium_photo-1688740375397-34605b6abe48?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZSUyMHBpY3xlbnwwfHwwfHx8MA%3D%3D',
     authorName: "Sarah Williams",
     authorDesignation: "E-commerce MD",
     authorComment:
-      "Best shipping partner we've worked with. Fast, reliable, and cost-effective solutions for our business needs.",
+      "Unsere sensiblen Waren sind bei Swift Cargo bestens geschützt. Sicherheit steht hier wirklich an erster Stelle.",
   },
   {
-    authorImage: authorImage,
+    authorImage: 'https://t4.ftcdn.net/jpg/04/31/64/75/360_F_431647519_usrbQ8Z983hTYe8zgA7t1XVc5fEtqcpa.jpg',
     authorName: "David Brown",
-    authorDesignation: "Supply Head",
+    authorDesignation: "Versorgungskopf",
     authorComment:
-      "Impressed by their technology integration and real-time tracking capabilities. Made our logistics management seamless and efficient.",
+      "Mit den maßgeschneiderten Logistiklösungen sparen wir Zeit und Kosten – ideal für unser wachsendes Unternehmen.",
   },
   {
     authorImage: authorImage,
     authorName: "Emma Davis",
-    authorDesignation: "Retail Manager",
+    authorDesignation: "Einzelhandelsmanager",
     authorComment:
-      "Consistent quality service every time. Their team goes above and beyond to ensure customer satisfaction.",
+      "Von Standardfracht bis hin zu Gefahrgut – Swift Cargo hat für jede unserer Anforderungen die passende Lösung.",
   },
   {
-    authorImage: authorImage,
+    authorImage: 'https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg',
     authorName: "Robert Miller",
-    authorDesignation: "Md, SM It",
+    authorDesignation: "Md, QS Tech",
     authorComment:
-      "Professional handling of complex shipments. Their expertise in customs and documentation saved us time and money.",
+      "Professionelle Abwicklung komplexer Sendungen. Ihre Expertise in Zoll und Dokumentation hat uns Zeit und Geld gespart.",
   },
 ];
 
@@ -73,13 +73,13 @@ const Reviews = () => {
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
           <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
           <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
-            Reviews
+            Rezension
           </span>
         </div>
       </div>
 
       <p className="text-2xl md:text-4xl max-w-sm w-full mx-auto font-bold mb-14">
-        What Users <span className="text-[#0778D4]">Think About Us</span>
+        Was Benutzer über  <span className="text-[#0778D4]">uns denken</span>
       </p>
 
       {/* Swiper Container */}

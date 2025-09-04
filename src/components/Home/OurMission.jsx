@@ -37,20 +37,19 @@ const OurMission = () => {
                 <BsLightning className="text-white text-xl" />
               </div>
               <span className="text-blue-300 font-semibold tracking-wider">
-                MISSION STATEMENT
+                Leitbild
               </span>
             </div>
 
             <h1 className="text-2xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Connecting The World,
+              Die Welt verbinden,
               <span className="block text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text">
-                One Shipment At A Time
+                Sendung für Sendung.
               </span>
             </h1>
 
             <p className="text-sm md:text-xl text-gray-300 mb-8 leading-relaxed">
-              We don't just deliver packages – we deliver possibilities, dreams,
-              and connections across continents.
+              Wir liefern nicht nur Pakete – wir liefern Chancen, Träume und Verbindungen über Kontinente hinweg.
             </p>
 
             {/* Feature Icons */}
@@ -58,17 +57,17 @@ const OurMission = () => {
               {[
                 {
                   icon: BsShield,
-                  label: "Secure",
+                  label: "Sicher",
                   color: "from-green-400 to-emerald-400",
                 },
                 {
                   icon: BsLightning,
-                  label: "Fast",
+                  label: "Schnell",
                   color: "from-yellow-400 to-orange-400",
                 },
                 {
                   icon: BsGlobe,
-                  label: "Global",
+                  label: "Weltweit",
                   color: "from-blue-400 to-cyan-400",
                 },
               ].map((item, index) => (
@@ -92,7 +91,7 @@ const OurMission = () => {
               to="/about"
               className="group inline-flex items-center gap-3 bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl mb-3"
             >
-              Explore Our Journey
+              Unsere Reise entdecken
               <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center duration-300">
                 <BsArrowRight className="text-white text-sm" />
               </div>
@@ -105,7 +104,7 @@ const OurMission = () => {
               <div className="text-3xl font-bold text-white mb-2">
                 {inView && <CountUp end={95} duration={2.5} />}%
               </div>
-              <div className="text-sm text-gray-300">Happy Customers</div>
+              <div className="text-sm text-gray-300">Zufriedene Kunden</div>
               <div className="w-full bg-white/20 rounded-full h-2 mt-3">
                 <div
                   className="bg-gradient-to-r from-green-400 to-emerald-400 h-2 rounded-full"
@@ -118,7 +117,7 @@ const OurMission = () => {
               <div className="text-3xl font-bold text-white mb-2">
                 {inView && <CountUp end={1500} duration={3} separator="," />}+
               </div>
-              <div className="text-sm text-gray-300">Monthly Shipments</div>
+              <div className="text-sm text-gray-300">Monatliche Sendungen</div>
               <div className="flex gap-1 mt-3">
                 {[...Array(5)].map((_, i) => (
                   <div
@@ -157,10 +156,10 @@ const OurMission = () => {
             className="absolute bottom-[40%] left-[40%] bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl animate-float"
             style={{ animationDelay: "1s" }}
           >
-            <div className="text-2xl flex items-center gap-x-2 font-bold text-gray-800 mb-1">
+            <div className="text-2xl justify-center flex items-center gap-x-2 font-bold text-gray-800 mb-1">
               4.8 <FaStar size={20} className="text-yellow-400" />
             </div>
-            <div className="text-sm text-gray-600">Average Customer Rating</div>
+            <div className="text-sm text-gray-600">Durchschnittliche Kundenbewertung</div>
           </div>
 
           {/* Particle Effects */}

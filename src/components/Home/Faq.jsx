@@ -4,29 +4,29 @@ import truck from "../../assets/truck.png";
 
 const faqData = [
   {
-    question: "What types of cargo do you handle?",
+    question: "Welche Arten von Fracht befördern Sie?",
     answer:
-      "We handle a wide range of cargo including general freight, perishable goods, hazardous materials, and oversized shipments.",
+      "Wir transportieren eine Vielzahl von Gütern – von Standardfracht über verderbliche Waren bis hin zu Gefahrgut und Übergrößen.",
   },
   {
-    question: "How long does international shipping take?",
+    question: "Welche Arten von Fracht befördern Sie?",
     answer:
-      "Delivery time depends on the destination and shipping method. Typically, international cargo takes 5–15 business days.",
+      "Lieferzeiten variieren je nach Zielort und Versandmethode – international in der Regel zwischen 5 und 15 Werktagen",
   },
   {
-    question: "Can I track my shipment in real-time?",
+    question: "Kann ich meine Sendung in Echtzeit verfolgen?",
     answer:
-      "Yes, all shipments come with real-time tracking and updates through our online portal.",
+      "Alle Sendungen können Sie in Echtzeit über unser Online-Portal verfolgen.Alle Sendungen können Sie in Echtzeit über unser Online-Portal verfolgen.",
   },
   {
-    question: "Do you provide insurance for cargo?",
+    question: "Bieten Sie eine Frachtversicherung an?",
     answer:
-      "Absolutely! We offer comprehensive insurance options to protect your cargo during transit.",
+      "Umfassende Versicherungsoptionen schützen Ihre Fracht während des gesamten Transports.",
   },
   {
-    question: "What is the cost of freight shipping?",
+    question: "Was kostet der Frachtversand?",
     answer:
-      "Costs vary depending on weight, volume, destination, and shipping mode. Contact us for a detailed quote.",
+      "Die Kosten hängen von Gewicht, Volumen, Zielort und Transportart ab – gern erstellen wir Ihnen ein individuelles Angebot.",
   },
 ];
 
@@ -49,24 +49,21 @@ const Faq = () => {
           </div>
         </div>
         <h1 className="text-3xl sm:text-5xl font-extrabold text-gray-800">
-          Logistics <span className="text-[#0778D4]">Solution</span> Questions
+          Fragen  <span className="text-[#0778D4]">zu </span> Logistiklösungen
         </h1>
         <p className="mt-4 text-gray-500 max-w-xl mx-auto">
-          Find answers to common questions about our shipping services,
-          tracking, costs, and more.
+          Antworten auf häufige Fragen zu Versand, Kosten, Sendungsverfolgung und mehr – in unserem umfassenden FAQ-Bereich.
         </p>
       </div>
 
       <div className="flex flex-col md:flex-row items-center gap-10">
         <div className="w-full lg:w-1/2 mt-10">
           <h1 className="text-3xl font-bold">
-            Everything you need to about{" "}
-            <span className="text-[#0778D4]">Swift</span>
+            Alles, was Sie über 
+            <span className="text-[#0778D4]"> Bernhard</span> wissen müssen
           </h1>
           <p className="max-w-md text-sm mt-6 text-justify">
-            Discover valuable information and insights about shipping logistics
-            through our comprehensive FAQ section, where we address common
-            questions and provide expert guidance.
+            Entdecken Sie wertvolle Informationen und Einblicke zur Versandlogistik in unserem umfassenden FAQ-Bereich. Dort beantworten wir häufig gestellte Fragen und bieten fachkundige Beratung.
           </p>
           <img src={truck} alt="Truck" className="w-full rounded-xl" />
         </div>

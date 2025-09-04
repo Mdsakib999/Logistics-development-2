@@ -14,30 +14,30 @@ import { useState } from "react";
 const supportChannels = [
   {
     icon: Phone,
-    title: "24/7 Phone Support",
+    title: "Telefonsupport rund um die Uhr",
     description:
-      "Connect with our expert team instantly, any time of day or night for immediate assistance.",
-    contact: "+1 (800) 555-0123",
+      "Direkter Kontakt zu unserem Expertenteam – rund um die Uhr erreichbar.",
+    contact: "+4915679697580",
     availability: "Always Available",
     color: "from-blue-500 to-blue-600",
     bgPattern: "bg-gradient-to-br from-blue-50 to-blue-100",
   },
-  {
-    icon: MessageSquare,
-    title: "Live Chat",
-    description:
-      "Get instant responses from our AI-powered chat system with human backup available.",
-    contact: "chat.logistics.com",
-    availability: "Reply within 2 mins",
-    color: "from-green-500 to-green-600",
-    bgPattern: "bg-gradient-to-br from-green-50 to-green-100",
-  },
+  // {
+  //   icon: MessageSquare,
+  //   title: "Live Chat",
+  //   description:
+  //     "Get instant responses from our AI-powered chat system with human backup available.",
+  //   contact: "chat.logistics.com",
+  //   availability: "Reply within 2 mins",
+  //   color: "from-green-500 to-green-600",
+  //   bgPattern: "bg-gradient-to-br from-green-50 to-green-100",
+  // },
   {
     icon: Headphones,
-    title: "Technical Support",
+    title: "Technische Unterstützung",
     description:
-      "Specialized technical assistance for system integrations and tracking solutions.",
-    contact: "tech@logistics.com",
+      "Spezialisierte technische Unterstützung für Integrationen und Sendungsverfolgung.",
+    contact: "transport@bernhardlogistik.de",
     availability: "Mon-Fri 8AM-8PM",
     color: "from-purple-500 to-purple-600",
     bgPattern: "bg-gradient-to-br from-purple-50 to-purple-100",
@@ -64,15 +64,14 @@ const Support = () => {
             </div>
 
             <h2 className="text-2xl md:text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
-              Always Here to <span className="text-[#0778D4]">Help</span>
+              Immer für <span className="text-[#0778D4]">Sie da</span>
             </h2>
             <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Multiple channels to ensure you get the support you need, when you
-              need it
+              Mehrere Kanäle, um sicherzustellen, dass Sie die Unterstützung erhalten, die Sie brauchen, wenn Sie sie brauchen
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
             {supportChannels.map((item, idx) => (
               <div
                 key={idx}
@@ -91,10 +90,10 @@ const Support = () => {
                     <h4 className="font-bold text-lg text-gray-800 group-hover:text-[#0778D4] transition-colors">
                       {item.title}
                     </h4>
-                    <div className="flex items-center text-sm text-gray-500">
+                    {/* <div className="flex items-center text-sm text-gray-500">
                       <Clock className="w-3 h-3 mr-1" />
                       {item.availability}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -123,17 +122,11 @@ const Support = () => {
 
           {/* Contact CTA */}
           <div className="text-center mt-16">
-            <div className="inline-flex items-center space-x-4">
-              <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent flex-1"></div>
-              <span className="text-gray-500 font-medium">
-                Need immediate assistance?
-              </span>
-              <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent flex-1"></div>
-            </div>
+     
             <button className="mt-6 group bg-white border-2 border-[#0778D4] text-[#0778D4] px-8 py-3 rounded-2xl font-bold hover:bg-[#0778D4] hover:text-white transition-all duration-300 transform hover:scale-105">
               <div className="flex items-center">
                 <Phone className="w-5 h-5 mr-2 group-hover:animate-pulse" />
-                Call Now: +1 (800) 555-0123
+                Call Now: +4915679697580
               </div>
             </button>
           </div>

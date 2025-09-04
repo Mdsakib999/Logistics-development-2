@@ -42,7 +42,8 @@ const Footer = () => {
                 <img src={logoWhite} className="max-w-[220px]" alt="" />
               </div>
               <p className="text-gray-300 text-sm lg:text-base mb-6">
-                Ihr zuverlässiger Logistikpartner für schnelle, zuverlässige und sichere Lieferlösungen weltweit. <div className="flex items-center justify-center lg:justify-start gap-2">
+                Spedition Bernhard GmbH Ihr zuverlässiger Logistikpartner für schnelle, zuverlässige und sichere Lieferlösungen weltweit. 
+                <div className="mt-2 flex items-center justify-center lg:justify-start gap-2">
                 <div className="flex space-x-1">
                   <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
                   <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-150"></div>

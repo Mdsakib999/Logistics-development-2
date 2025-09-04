@@ -15,17 +15,17 @@ const Home = () => {
     <div>
       <Banner
         bannerImage={bannerImage}
-        title={"Efficient & Reliable Shipping And Logistics Company"}
+        title={"Logistik neu gedacht: flexibel, zuverlässig, individuell. Weil jede Fracht ihre eigene Lösung verdient."}
         paragraph={
-          "We provide seamless, reliable, and end-to-end logistics solutions tailored to your business needs—ensuring smooth operations, on-time deliveries, and continuous momentum in a fast-paced global market."
+          "Wir bieten nahtlose, zuverlässige und ganzheitliche Logistiklösungen, die individuell auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind – für reibungslose Abläufe, pünktliche Lieferungen und nachhaltigen Erfolg in einem dynamischen globalen Markt."
         }
-        buttonText={"Learn More"}
+        buttonText={"Mehr erfahren"}
       />
       <Features />
       <AboutUs />
       <OurMission />
       {/* <Blog /> */}
-      <Solutions />
+      {/* <Solutions /> */}
       {/* <LogisticsOption /> */}
       <Support />
       <Faq />

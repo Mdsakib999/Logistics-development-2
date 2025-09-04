@@ -8,26 +8,26 @@ const allFeatures = [
   {
     icon: <BiLike size={50} color="#6998fd" />,
     bgColor: "bg-blue-200",
-    title: "Global Coverage",
-    text: "Connecting your business to destinations worldwide.",
+    title: "Weltweite Abdeckung",
+    text: "Wir verbinden Ihr Unternehmen mit Zielen auf der ganzen Welt.",
   },
   {
     icon: <FaClock size={50} color="purple" />,
     bgColor: "bg-purple-200",
-    title: "On-Time Delivery",
-    text: "Ensuring your shipments arrive as scheduled.",
+    title: "Pünktliche Lieferung",
+    text: "Zuverlässige Lieferungen – pünktlich und planbar, darauf können Sie sich verlassen",
   },
   {
     icon: <SiAwssecretsmanager size={50} color="green" />,
     bgColor: "bg-green-200",
-    title: "Secure Handling",
-    text: "Protecting your goods at every step of the journey.",
+    title: "Sichere Handhabung",
+    text: "Rundum-Schutz für Ihre Waren – in jeder Phase des Transportwegs.",
   },
   {
     icon: <SiPivotaltracker size={50} color="orange" />,
     bgColor: "bg-orange-200",
-    title: "Real-Time Tracking",
-    text: "Monitor your shipments with live tracking updates.",
+    title: "Echtzeit-Tracking",
+    text: "Behalten Sie Ihre Sendungen jederzeit im Blick – mit Live-Tracking in Echtzeit.",
   },
 ];
 
@@ -38,12 +38,12 @@ const Features = () => {
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
           <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
           <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
-            Features
+            Leistungsmerkmale
           </span>
         </div>
       </div>
       <p className="text-3xl md:text-5xl font-bold mb-12 text-center">
-        Why <span className="text-[#0778D4]">Partner</span> With Us
+        Warum eine  <span className="text-[#0778D4]">Partnerschaft </span> mit uns?
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full mx-auto">
         {allFeatures.map((feature, index) => (

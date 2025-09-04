@@ -12,16 +12,16 @@ const Service = () => {
     <div>
       <Banner
         bannerImage={bannerImage}
-        title={"Smart logistics ensuring fast deliveries & global reach"}
+        title={"Intelligente Logistik sorgt für schnelle Lieferungen und weltweite Reichweite."}
         paragraph={
-          "We provide smart logistics solutions that keep your business moving. From fast shipping to secure handling and global coverage, our services ensure your goods reach their destination safely and on time."
+          "Wir liefern intelligente Logistik für Ihr Unternehmen. Von zuverlässigem Versand und sicherer Handhabung bis hin zur weltweiten Reichweite sorgen wir dafür, dass Ihre Waren jedes Mal pünktlich ankommen."
         }
-        buttonText={"Our Services"}
+        buttonText={"unsere Dienstleistungen"}
       />
       <Delivery />
       <OurProcess />
       <Sustainability />
-      <Industries />
+      {/* <Industries /> */}
       {/* <ServiceFeatures /> */}
       {/* <Reviews /> */}
     </div>

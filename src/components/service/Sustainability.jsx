@@ -11,16 +11,15 @@ const Sustainability = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
                 <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
                 <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
-                  Sustainability First
+                  Nachhaltigkeit zuerst
                 </span>
               </div>
             </div>
             <p className="text-2xl md:text-4xl text-gray-600 max-w-2xl mx-auto">
-              Pioneering{" "}
-              <span className="text-[#0778D4] font-semibold">
-                carbon-neutral logistics
+              Innovative grüne Logistik für eine   <span className="text-[#0778D4] font-semibold">
+                CO₂-freie
               </span>{" "}
-              with sustainable green solutions.
+               Zukunft.
             </p>
           </div>
         </Fade>
@@ -37,7 +36,7 @@ const Sustainability = () => {
                 <div className="flex items-center space-x-2">
                   <Award className="w-6 h-6 text-[#0778D4]" />
                   <span className="font-semibold text-gray-800">
-                    ISO 14001 Certified
+                    ISO 14001-zertifiziert
                   </span>
                 </div>
               </div>
@@ -52,12 +51,10 @@ const Sustainability = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    Zero Emission Goals
+                   Null-Emissions-Ziele
                   </h3>
                   <p className="text-gray-600 text-sm md:text-lg">
-                    Committed to achieving net-zero carbon emissions by 2030
-                    through electric fleet transition and renewable energy
-                    adoption.
+                    Auf dem Weg zu Netto-Null-Kohlenstoffemissionen bis 2030 durch den Einsatz elektrischer Flotten und sauberer Energielösungen.
                   </p>
                 </div>
               </div>
@@ -68,11 +65,11 @@ const Sustainability = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    Circular Economy
+                    Kreislaufwirtschaft
                   </h3>
                   <p className="text-gray-600 text-sm md:text-lg">
-                    Implementing sustainable packaging solutions and waste
-                    reduction programs across our entire supply chain network.
+                    Förderung umweltfreundlicher Verpackungen und Abfallreduzierung in unserem gesamten Logistiknetzwerk.
+
                   </p>
                 </div>
               </div>
@@ -83,11 +80,10 @@ const Sustainability = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    Smart Technology
+                   Intelligente Technologie
                   </h3>
                   <p className="text-gray-600 text-sm md:text-lg">
-                    AI-powered route optimization and IoT sensors to minimize
-                    fuel consumption and reduce environmental impact.
+                    Routenoptimierung mit KI und IoT-Sensoren zur Kraftstoffeinsparung und Reduzierung von Emissionen.
                   </p>
                 </div>
               </div>
@@ -102,19 +98,20 @@ const Sustainability = () => {
                 <div className="text-3xl font-bold text-[#0778D4] mb-2">
                   45%
                 </div>
-                <p className="text-gray-600">Emission Reduction</p>
+                <p className="text-gray-600">Emissionsreduktion
+</p>
               </div>
               <div>
                 <div className="text-3xl font-bold text-[#0778D4] mb-2">
                   100%
                 </div>
-                <p className="text-gray-600">Renewable Energy</p>
+                <p className="text-gray-600">Erneuerbare Energie</p>
               </div>
               <div>
                 <div className="text-3xl font-bold text-[#0778D4] mb-2">
                   85%
                 </div>
-                <p className="text-gray-600">Recyclable Materials</p>
+                <p className="text-gray-600">recycelbare Materialien</p>
               </div>
             </div>
           </div>

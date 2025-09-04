@@ -8,11 +8,11 @@ const Contact = () => {
     <div>
       <Banner
         bannerImage={bannerImage}
-        title={"Contact Us"}
+        title={"Kontaktieren Sie uns für weitere Informationen"}
         paragraph={
-          "We’d love to hear from you! Whether you have a question, need support, or simply want to share your thoughts, our team is here and ready to assist. Your inquiries are important to us, and we’re committed to responding promptly and helping you every step of the way."
+          "Wir freuen uns, von Ihnen zu hören! Ob Sie eine Frage haben, Unterstützung benötigen oder einfach nur Ihre Meinung mitteilen möchten – unser Team ist für Sie da und hilft Ihnen gerne weiter. Ihre Anfragen sind uns wichtig, und wir bemühen uns, schnell zu antworten und Sie bei jedem Schritt zu unterstützen."
         }
-        buttonText={"Get in touch"}
+        buttonText={"Nehmen Sie Kontakt auf"}
       />
       <InfoSection />
       <ContactForm />

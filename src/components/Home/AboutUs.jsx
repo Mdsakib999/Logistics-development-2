@@ -30,20 +30,14 @@ const AboutUs = () => {
         {/* Text Content */}
         <div className="w-full max-w-2xl mx-auto lg:w-1/2 text-center lg:text-left">
           <h2 className="text-sm text-gray-400 tracking-wide mb-2 uppercase">
-            About Swift Cargo
+            Über Spedition Bernhard GmbH
           </h2>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Get to Know Swift Cargo
+            Lernen Sie Spedition Bernhard GmbH
           </h1>
           <Slide direction="up" duration={1000}>
             <p className="text-sm md:text-md leading-relaxed text-gray-300 text-justify">
-              Swift Cargo is a leading name in the logistics industry, known for
-              its efficiency and reliability. We specialize in delivering
-              tailored solutions for businesses of all sizes. With global
-              coverage and advanced tracking, we ensure your shipments are
-              always on time and secure. Our experienced team is committed to
-              providing seamless logistics that keep your business moving
-              forward. At Swift Cargo, your success is our priority.
+              Die Spedition Bernhard GmbH ist ein führender Anbieter in der Logistikbranche und bekannt für ihre Effizienz und Zuverlässigkeit. Wir sind spezialisiert auf die Bereitstellung maßgeschneiderter Lösungen für Unternehmen jeder Größe. Mit globaler Abdeckung und fortschrittlicher Sendungsverfolgung sorgen wir dafür, dass Ihre Sendungen stets pünktlich und sicher ankommen.
             </p>
           </Slide>
         </div>
@@ -58,13 +52,13 @@ const AboutUs = () => {
           <p className="text-3xl font-bold text-blue-300">
             {inView && <CountUp end={10} duration={2} />}+
           </p>
-          <p className="text-gray-300">Years of Experience</p>
+          <p className="text-gray-300">Langjährige Erfahrung</p>
         </div>
         <div>
           <p className="text-3xl font-bold text-purple-300">
             {inView && <CountUp end={100} duration={2.5} separator="," />}K+
           </p>
-          <p className="text-gray-300">Customers</p>
+          <p className="text-gray-300">Kunden</p>
         </div>
         <div>
           <p className="text-3xl font-bold text-emerald-300">

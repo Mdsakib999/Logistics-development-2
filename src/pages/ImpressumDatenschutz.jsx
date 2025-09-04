@@ -6,7 +6,7 @@ const ImpressumDatenschutz = () => {
 		window.scrollTo({ top: 0, behavior: "smooth" });
 	}, []);
 	return (
-		<div className="p-6 md:max-w-5xl mx-auto pt-20 b">
+		<div className="p-6 md:max-w-5xl mx-auto pt-20">
 			{/* Impressum Section */}
 			<section className="mb-10">
 				<h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-8">

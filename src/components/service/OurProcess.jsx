@@ -10,16 +10,15 @@ const OurProcess = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
             <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
             <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
-              Our Process{" "}
+              Unser Ablauf
             </span>
           </div>
         </div>
-        <p className="text-2xl md:text-4xl font-bold text-gray-600 max-w-2xl mx-auto">
-          Our{" "}
-          <span className="text-[#0778D4] font-semibold">
-            streamlined process
+        <p className="text-2xl md:text-3xl font-bold text-gray-600 max-w-2xl mx-auto">
+          Unsere <span className="text-[#0778D4] font-semibold"> 
+             reibungslosen
           </span>{" "}
-          ensures efficient and hassle-free shipping
+            Abläufe gewährleisten pünktliche und unkomplizierte Lieferungen.
         </p>
       </div>
 
@@ -44,11 +43,11 @@ const OurProcess = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-gray-800">
-                      Package Collection
+                      Paketsammlung
+
                     </h3>
                     <p className="text-gray-600 text-sm mt-1">
-                      We pick up your goods from your door with care and
-                      accuracy.
+                      Wir bieten schnelle und bequeme Paketabholung direkt bei Ihnen vor Ort.
                     </p>
                   </div>
                 </div>
@@ -59,10 +58,11 @@ const OurProcess = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-gray-800">
-                      Smart Routing
+                     Intelligente Routenplanung
+
                     </h3>
                     <p className="text-gray-600 text-sm mt-1">
-                      Advanced route planning ensures quick and safe transit.
+                      Optimierte Routen für schnelle und zuverlässige Lieferungen.
                     </p>
                   </div>
                 </div>
@@ -73,10 +73,10 @@ const OurProcess = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-gray-800">
-                      Timely Delivery
+                      Pünktliche Lieferung
                     </h3>
                     <p className="text-gray-600 text-sm mt-1">
-                      Get your shipments delivered on time, every time.
+                      Wir sorgen dafür, dass Ihre Sendungen stets pünktlich ankommen.
                     </p>
                   </div>
                 </div>
