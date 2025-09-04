@@ -32,13 +32,13 @@ const Navbar = () => {
       className={`fixed left-0 z-50 w-full transition-colors duration-300 ${
         isScrolled
           ? "top-0 bg-[#11152D]/90 backdrop-blur shadow"
-          : "top-20 bg-transparent"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between text-white">
         {/* Logo */}
         <Link
-          className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold hover:text-blue-300 transition-colors duration-200"
+          className="text-2xl sm:text-3xl lg:text-4xl  font-bold hover:text-blue-300 transition-colors duration-200"
           to="/"
         >
           Swift
@@ -50,7 +50,7 @@ const Navbar = () => {
             <Link
               key={link.to}
               to={link.to}
-              className={`relative font-serif text-lg transition-all duration-200 ${
+              className={`relative  text-lg transition-all duration-200 ${
                 isActive(link.to)
                   ? "text-blue-300 font-semibold"
                   : "text-white hover:text-blue-300"
@@ -97,7 +97,7 @@ const Navbar = () => {
           {/* Mobile Menu Header */}
           <div className="bg-[#11152D] flex items-center justify-between p-6 border-b border-white/10">
             <Link
-              className="cursor-pointer text-2xl font-serif font-bold text-white hover:text-blue-300 transition-colors duration-200"
+              className="cursor-pointer text-2xl  font-bold text-white hover:text-blue-300 transition-colors duration-200"
               to="/"
               onClick={() => setMenuOpen(false)}
             >
@@ -118,7 +118,7 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`relative px-4 py-3 rounded-lg font-serif text-lg transition-all duration-200 ${
+                className={`relative px-4 py-3 rounded-lg  text-lg transition-all duration-200 ${
                   isActive(link.to)
                     ? "text-blue-300 font-semibold bg-white/5"
                     : "text-white hover:text-blue-300 hover:bg-white/5"

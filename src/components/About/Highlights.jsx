@@ -41,7 +41,14 @@ const Highlights = () => {
   return (
     <div className="py-16 bg-[#F9FBFD]">
       <div className="max-w-7xl mx-auto px-4 text-center mb-10">
-        <h2 className="text-lg sm:text-xl font-bold mb-2">Key Focus</h2>
+        <div className="flex items-center justify-center mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
+            <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+            <span className="text-blue-700 font-medium text-sm uppercase tracking-wider">
+              Key Focus
+            </span>
+          </div>
+        </div>{" "}
         <h1 className="text-2xl sm:text-4xl font-bold mb-10">
           Our Service <span className="text-[#417BE6]">Highlights</span>
         </h1>

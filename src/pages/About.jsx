@@ -1,7 +1,7 @@
 import bannerImage from "../assets/about.jpg";
 import CompanyHistory from "../components/About/CompanyHistory";
 import Highlights from "../components/About/Highlights";
-import NewsLetter from "../components/About/NewsLetter";
+// import NewsLetter from "../components/About/NewsLetter";
 import OurStory from "../components/About/OurStory";
 import Banner from "../components/Shared/Banner";
 
@@ -19,7 +19,7 @@ const About = () => {
       <OurStory />
       <CompanyHistory />
       <Highlights />
-      <NewsLetter />
+      {/* <NewsLetter /> */}
     </div>
   );
 };

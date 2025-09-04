@@ -2,69 +2,200 @@ import { Link } from "react-router";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import mission from "../../assets/mission.webp";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsShield, BsLightning, BsGlobe } from "react-icons/bs";
+import { FaStar } from "react-icons/fa";
 
 const OurMission = () => {
   const { ref, inView } = useInView();
 
   return (
-    <div className="relative my-40 w-full">
-      {/* Full Width Background Image */}
-      <img
-        src={mission}
-        alt="Our Mission"
-        className="w-full max-w-7xl mx-auto h-[600px] object-cover brightness-75 rounded-none md:rounded-md"
-      />
+    <div className="relative my-32 w-full overflow-hidden">
+      {/* Split Screen Layout */}
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 min-h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+        {/* Left Side - Interactive Content */}
+        <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-gray-950 p-8 lg:p-12 flex flex-col justify-between">
+          {/* Animated Background Pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div
+              className="absolute top-20 left-10 w-32 h-32 border border-white rounded-full animate-spin"
+              style={{ animationDuration: "20s" }}
+            ></div>
+            <div
+              className="absolute bottom-20 right-10 w-24 h-24 border border-white rounded-full animate-spin"
+              style={{
+                animationDuration: "15s",
+                animationDirection: "reverse",
+              }}
+            ></div>
+            <div className="absolute top-1/2 left-1/4 w-16 h-16 border border-white rounded-full animate-pulse"></div>
+          </div>
 
-      {/* Content Overlay */}
-      <div className="absolute inset-0 flex justify-center items-center px-4">
-        <div className="w-full max-w-6xl">
-          {/* Glass Section */}
-          <div className="backdrop-blur-sm bg-gray-900/0 border border-white/30 rounded-xl max-w-md w-full md:w-4/5 lg:w-3/5 p-6 md:p-10 text-white flex flex-col justify-between h-[70%]">
-            {/* Title & Button */}
-            <div className="space-y-4">
-              <p className="text-lg md:text-xl font-semibold">
-                Our mission is to provide fast, secure, and reliable shipping
-                solutions that empower businesses around the globe.
-              </p>
-
-              <Link
-                to="/about"
-                className="inline-flex items-center gap-x-2 cursor-pointer bg-[#0778D4] text-white border-2 border-transparent hover:text-[#0778D4] hover:bg-white hover:border-[#0778D4] transition-all duration-300 px-8 py-2 rounded-full text-lg font-serif"
-              >
-                Read More
-                <BsArrowRight className="text-lg" />
-              </Link>
+          {/* Header Section */}
+          <div className="relative z-10">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
+                <BsLightning className="text-white text-xl" />
+              </div>
+              <span className="text-blue-300 font-semibold tracking-wider">
+                MISSION STATEMENT
+              </span>
             </div>
 
-            {/* Bottom Stats */}
-            <div
-              ref={ref}
-              className="mt-16 md:mt-28 lg:mt-36 flex flex-col md:flex-row justify-around items-center gap-6"
+            <h1 className="text-2xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Connecting The World,
+              <span className="block text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text">
+                One Shipment At A Time
+              </span>
+            </h1>
+
+            <p className="text-sm md:text-xl text-gray-300 mb-8 leading-relaxed">
+              We don't just deliver packages – we deliver possibilities, dreams,
+              and connections across continents.
+            </p>
+
+            {/* Feature Icons */}
+            <div className="flex gap-6 mb-8">
+              {[
+                {
+                  icon: BsShield,
+                  label: "Secure",
+                  color: "from-green-400 to-emerald-400",
+                },
+                {
+                  icon: BsLightning,
+                  label: "Fast",
+                  color: "from-yellow-400 to-orange-400",
+                },
+                {
+                  icon: BsGlobe,
+                  label: "Global",
+                  color: "from-blue-400 to-cyan-400",
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="group flex flex-col items-center gap-2"
+                >
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                  >
+                    <item.icon className="text-white text-2xl" />
+                  </div>
+                  <span className="text-sm text-gray-400 font-medium">
+                    {item.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <Link
+              to="/about"
+              className="group inline-flex items-center gap-3 bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl mb-3"
             >
-              <div className="">
-                <h2 className="text-4xl font-bold text-blue-300">
-                  {inView && <CountUp end={95} duration={2} />}%
-                </h2>
-                <p className="text-sm mt-3">
-                  Customer satisfaction rate based on feedback surveys
-                </p>
+              Explore Our Journey
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center duration-300">
+                <BsArrowRight className="text-white text-sm" />
               </div>
-              <div className="">
-                <h2 className="text-4xl font-bold text-purple-300">
-                  {inView && (
-                    <CountUp end={1500} duration={2.5} separator="," />
-                  )}
-                  +
-                </h2>
-                <p className="text-sm mt-3">
-                  Shipments handled monthly across multiple continents.
-                </p>
+            </Link>
+          </div>
+
+          {/* Floating Stats */}
+          <div ref={ref} className="relative z-10 grid grid-cols-2 gap-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <div className="text-3xl font-bold text-white mb-2">
+                {inView && <CountUp end={95} duration={2.5} />}%
+              </div>
+              <div className="text-sm text-gray-300">Happy Customers</div>
+              <div className="w-full bg-white/20 rounded-full h-2 mt-3">
+                <div
+                  className="bg-gradient-to-r from-green-400 to-emerald-400 h-2 rounded-full"
+                  style={{ width: "95%" }}
+                ></div>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <div className="text-3xl font-bold text-white mb-2">
+                {inView && <CountUp end={1500} duration={3} separator="," />}+
+              </div>
+              <div className="text-sm text-gray-300">Monthly Shipments</div>
+              <div className="flex gap-1 mt-3">
+                {[...Array(5)].map((_, i) => (
+                  <div
+                    key={i}
+                    className="flex-1 bg-gradient-to-t from-blue-400 to-purple-400 rounded-full"
+                    style={{ height: `${(i + 1) * 4}px` }}
+                  ></div>
+                ))}
               </div>
             </div>
           </div>
         </div>
+
+        {/* Right Side - Dynamic Image */}
+        <div className="relative group overflow-hidden">
+          <img
+            src={mission}
+            alt="Our Mission"
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+
+          {/* Overlay Elements */}
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-black/20 to-black/40"></div>
+
+          {/* Floating Cards */}
+          <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl animate-float">
+            <div className="flex items-center gap-3">
+              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-semibold text-gray-800">
+                Live Tracking Active
+              </span>
+            </div>
+          </div>
+
+          <div
+            className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl animate-float"
+            style={{ animationDelay: "1s" }}
+          >
+            <div className="text-2xl flex items-center gap-x-2 font-bold text-gray-800 mb-1">
+              4.8 <FaStar size={20} className="text-yellow-400" />
+            </div>
+            <div className="text-sm text-gray-600">Average Customer Rating</div>
+          </div>
+
+          {/* Particle Effects */}
+          <div className="absolute inset-0 pointer-events-none">
+            {[...Array(6)].map((_, i) => (
+              <div
+                key={i}
+                className="absolute w-2 h-2 bg-white rounded-full opacity-60 animate-ping"
+                style={{
+                  top: `${Math.random() * 100}%`,
+                  left: `${Math.random() * 100}%`,
+                  animationDelay: `${i * 0.5}s`,
+                  animationDuration: "3s",
+                }}
+              ></div>
+            ))}
+          </div>
+        </div>
       </div>
+
+      {/* Custom Animations */}
+      <style jsx>{`
+        @keyframes float {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+      `}</style>
     </div>
   );
 };
