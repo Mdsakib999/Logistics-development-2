@@ -7,7 +7,7 @@ const InfoBar = () => {
         <div className="flex items-center gap-x-2">
           <FaLocationDot className="w-5 sm:w-3" />
           <p className="text-xs sm:text-sm md:text-base lg:text-lg">
-            Erika-Mann-Straße 33, 80636 München
+            Boschstr. 4, 67304 Eisenberg
           </p>
         </div>
         <div className="flex items-center">
