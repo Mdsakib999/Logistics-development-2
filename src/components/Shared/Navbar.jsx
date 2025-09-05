@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between text-white">
         {/* Logo */}
         <Link
-          className="max-w-[220px] transition-colors duration-200"
+          className="max-w-[160px] md:max-w-[220px] transition-colors duration-200"
           to="/"
         >
          <img src={logoWhite} alt="" />
@@ -103,7 +103,7 @@ const Navbar = () => {
               to="/"
               onClick={() => setMenuOpen(false)}
             >
-              Swift
+              Bernhard
             </Link>
             <button
               aria-label="Close menu"
@@ -137,7 +137,7 @@ const Navbar = () => {
             {/* Mobile Contact Button */}
             <div className="pt-6 mt-6 border-t border-white/10">
               <Link to="/contact" onClick={() => setMenuOpen(false)}>
-                <Button buttonText="Contact" />
+                <Button buttonText="Kontakt" />
               </Link>
             </div>
           </div>
