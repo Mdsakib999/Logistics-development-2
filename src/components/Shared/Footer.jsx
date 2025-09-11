@@ -42,20 +42,17 @@ const Footer = () => {
                 <img src={logoWhite} className="max-w-[220px]" alt="" />
               </div>
               <p className="text-gray-300 text-sm lg:text-base mb-6">
-                Spedition Bernhard GmbH Ihr zuverlässiger Logistikpartner für schnelle, zuverlässige und sichere Lieferlösungen weltweit. 
+                Spedition Bernhard GmbH Ihr zuverlässiger Logistikpartner für
+                schnelle, zuverlässige und sichere Lieferlösungen weltweit.
                 <div className="mt-2 flex items-center justify-center lg:justify-start gap-2">
-                <div className="flex space-x-1">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-                  <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-150"></div>
-                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-300"></div>
+                  <div className="flex space-x-1">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                    <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-150"></div>
+                    <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-300"></div>
+                  </div>
                 </div>
-                
-              </div>
               </p>
-              
             </div>
-
-           
           </div>
 
           {/* Quick Links with Enhanced Styling */}
@@ -72,7 +69,10 @@ const Footer = () => {
                 { name: "Über uns", path: "/about" },
                 { name: "Dienstleistungen", path: "/service" },
                 { name: "Kontakt", path: "/contact" },
-                { name: "Impressum & Datenschutz", path: "/impressumDatenschutz" },
+                {
+                  name: "Impressum & Datenschutz",
+                  path: "/impressumDatenschutz",
+                },
               ].map((link, index) => (
                 <li key={index} className="">
                   <NavLink
@@ -93,35 +93,31 @@ const Footer = () => {
 
           {/* Services Section */}
           <div className="flex flex-col items-start">
-  <div className="flex items-center gap-2 mb-6">
-    <div className="w-8 h-1 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
-    <h3 className="text-xl lg:text-2xl font-bold text-white">
-      Unsere Dienstleistungen
-    </h3>
-  </div>
-  <ul className="space-y-3">
-    {[
-      { name: "Schnelllieferung", icon: FaShippingFast },
-      { name: "Fracht- & Transportlösungen", icon: FaTruck },
-      { name: "Weltweiter Versand", icon: FaGlobe },
-      { name: "Rund-um-die-Uhr Unterstützung", icon: FaClock },
-    ].map((service, index) => (
-      <li
-        key={index}
-        className="flex items-center gap-3 group"
-      >
-        <service.icon
-          className="text-blue-400 group-hover:scale-110 transition-transform"
-          size={16}
-        />
-        <span className="text-gray-300 hover:text-blue-400 transition-colors text-base lg:text-lg">
-          {service.name}
-        </span>
-      </li>
-    ))}
-  </ul>
-</div>
-
+            <div className="flex items-center gap-2 mb-6">
+              <div className="w-8 h-1 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
+              <h3 className="text-xl lg:text-2xl font-bold text-white">
+                Unsere Dienstleistungen
+              </h3>
+            </div>
+            <ul className="space-y-3">
+              {[
+                { name: "Schnelllieferung", icon: FaShippingFast },
+                { name: "Fracht- & Transportlösungen", icon: FaTruck },
+                { name: "Weltweiter Versand", icon: FaGlobe },
+                { name: "Rund-um-die-Uhr Unterstützung", icon: FaClock },
+              ].map((service, index) => (
+                <li key={index} className="flex items-center gap-3 group">
+                  <service.icon
+                    className="text-blue-400 group-hover:scale-110 transition-transform"
+                    size={16}
+                  />
+                  <span className="text-gray-300 hover:text-blue-400 transition-colors text-base lg:text-lg">
+                    {service.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           {/* Social Media with Enhanced Design */}
           <div className="flex flex-col items-start">
@@ -131,7 +127,7 @@ const Footer = () => {
                 FOLGE UNS
               </h3>
             </div>
-             <div className="space-y-4 w-full">
+            <div className="space-y-4 w-full">
               <div className="flex items-center justify-start gap-3 group">
                 <div className="p-2 bg-blue-500/10 rounded-full group-hover:bg-blue-500/20 transition-colors">
                   <FaLocationDot size={18} className="text-blue-400" />
@@ -146,7 +142,9 @@ const Footer = () => {
                   <FaPhone size={18} className="text-blue-400" />
                 </div>
                 <span className="text-gray-300 text-sm lg:text-base">
-                  +4915679697580
+                  <a href="tel:+4915679702744" className="">
+                    +49 15679702744
+                  </a>
                 </span>
               </div>
 
@@ -155,12 +153,14 @@ const Footer = () => {
                   <FaEnvelope size={18} className="text-blue-400" />
                 </div>
                 <span className="text-gray-300 text-sm lg:text-base">
-                  transport@bernhardlogistik.de
+                  <a href="mailto:transport@bernhardlogistik.de" className="">
+                    transport@bernhardlogistik.de
+                  </a>
                 </span>
               </div>
             </div>
 
-{/* Social icon */}
+            {/* Social icon */}
             {/* <div className="flex gap-4 mb-6">
               {[
                 {
@@ -190,7 +190,6 @@ const Footer = () => {
                 </div>
               ))}
             </div> */}
-
           </div>
         </div>
 
@@ -207,16 +206,16 @@ const Footer = () => {
         {/* Copyright with Enhanced Design */}
         <div className="text-center py-4">
           <div className="flex items-center justify-center gap-2">
-              <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-              <p className="text-gray-400 text-sm lg:text-base">
-                ©️{" "}
-                <span className="font-semibold text-white">
-                  2025 Spedition Bernhard GmbH
-                </span>
-                , Alle Rechte vorbehalten
-              </p>
-              <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-300"></div>
-            </div>
+            <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+            <p className="text-gray-400 text-sm lg:text-base">
+              ©️{" "}
+              <span className="font-semibold text-white">
+                2025 Spedition Bernhard GmbH
+              </span>
+              , Alle Rechte vorbehalten
+            </p>
+            <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-300"></div>
+          </div>
         </div>
       </div>
     </div>

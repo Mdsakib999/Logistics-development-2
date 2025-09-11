@@ -49,7 +49,7 @@ const InfoSection = () => {
           </div>
           <h3 className="font-semibold text-gray-800 mb-2">Rufen Sie uns an</h3>
           <p className="text-sm sm:text-base text-blue-400 font-medium">
-            +4915679697580
+            +49 15679702744
           </p>
         </div>
       </div>

@@ -2,9 +2,11 @@
 import React, { useEffect } from "react";
 
 const ImpressumDatenschutz = () => {
+
 	useEffect(() => {
 		window.scrollTo({ top: 0, behavior: "smooth" });
 	}, []);
+
 	return (
 		<div className="p-6 md:max-w-5xl mx-auto pt-20">
 			{/* Impressum Section */}
@@ -21,11 +23,15 @@ const ImpressumDatenschutz = () => {
 				</p>
 				<p className="mb-2 text-base sm:text-lg">
 					<strong>Telefon: </strong>{" "}
-					<a href="tel:+4915679697580" className="">
-						+4915679697580
+					<a href="tel:+4915679702744" className="">
+						+49 15679702744
 					</a>
 					<br />
-					<strong>E-Mail: </strong> transport@bernhardlogistik.de
+					<strong>E-Mail: </strong> 
+					<a href="mailto:transport@bernhardlogistik.de" className="">
+						transport@bernhardlogistik.de
+					</a>
+					
 				</p>
 				<h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
 					Vertretungsberechtigter
@@ -75,11 +81,14 @@ const ImpressumDatenschutz = () => {
 					Boschstraße 4, 67304 Eisenberg, Deutschland
 					<br />
 					<strong>Telefon:</strong>{" "}
-					<a href="tel:+4915679697580" className="">
-						+4915679697580
+					<a href="tel:+4915679702744" className="">
+						+49 15679702744
 					</a>
 					<br />
-					<strong>E-Mail:</strong> transport@bernhardlogistik.de
+					<strong>E-Mail: </strong> 
+					<a href="mailto:transport@bernhardlogistik.de" className="">
+						transport@bernhardlogistik.de
+					</a>
 					<br />
 				</p>
 				<h2 className="text-2xl sm:text-3xl md:text-3xl font-semibold mt-4 mb-2">
