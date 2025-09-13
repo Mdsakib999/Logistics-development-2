@@ -12,28 +12,28 @@ const AllReviews = [
     authorName: "Jane Cooper",
     authorDesignation: "CEO & Gründer",
     authorComment:
-      "Seit wir mit Swift Cargo arbeiten, laufen unsere Lieferketten reibungslos – pünktlich und zuverlässig wie nie zuvor.",
+      "Seit wir mit Spedition Bernhard GmbH arbeiten, laufen unsere Lieferketten reibungslos – pünktlich und zuverlässig wie nie zuvor.",
   },
   {
     authorImage: 'https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA4L2pvYjEwMzQtZWxlbWVudC0wNy00MDMucG5n.png',
     authorName: "John Doe",
     authorDesignation: "Geschäftsinhaber",
     authorComment:
-      "Seit wir mit Swift Cargo arbeiten, laufen unsere Lieferketten reibungslos – pünktlich und zuverlässig wie nie zuvor.",
+      "Die Sendungsverfolgung in Echtzeit gibt uns jederzeit volle Transparenz. Ein Service, auf den wir uns verlassen können.",
   },
   {
     authorImage: 'https://t4.ftcdn.net/jpg/04/31/64/75/360_F_431647519_usrbQ8Z983hTYe8zgA7t1XVc5fEtqcpa.jpg',
     authorName: "Alice Smith",
     authorDesignation: "Unternehmer",
     authorComment:
-      "Die Sendungsverfolgung in Echtzeit gibt uns jederzeit volle Transparenz. Ein Service, auf den wir uns verlassen können.",
+      "Hervorragender Kundensupport – rund um die Uhr erreichbar und immer lösungsorientiert.",
   },
   {
     authorImage: "https://img.freepik.com/premium-photo/portrait-smiling-young-man-looking-camera_33839-1731.jpg",
     authorName: "Michael Johnson",
     authorDesignation: "Betriebsleiter",
     authorComment:
-      "Hervorragender Kundensupport – rund um die Uhr erreichbar und immer lösungsorientiert.",
+      "Unsere sensiblen Waren sind bei Spedition Bernhard GmbH bestens geschützt. Sicherheit steht hier wirklich an erster Stelle.",
   },
   {
     authorImage: 'https://plus.unsplash.com/premium_photo-1688740375397-34605b6abe48?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZSUyMHBpY3xlbnwwfHwwfHx8MA%3D%3D',
@@ -54,15 +54,15 @@ const AllReviews = [
     authorName: "Emma Davis",
     authorDesignation: "Einzelhandelsmanager",
     authorComment:
-      "Von Standardfracht bis hin zu Gefahrgut – Swift Cargo hat für jede unserer Anforderungen die passende Lösung.",
+      "Von Standardfracht bis hin zu Gefahrgut – Spedition Bernhard GmbH hat für jede unserer Anforderungen die passende Lösung.",
   },
-  {
-    authorImage: 'https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg',
-    authorName: "Robert Miller",
-    authorDesignation: "Md, QS Tech",
-    authorComment:
-      "Professionelle Abwicklung komplexer Sendungen. Ihre Expertise in Zoll und Dokumentation hat uns Zeit und Geld gespart.",
-  },
+  // {
+  //   authorImage: 'https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg',
+  //   authorName: "Robert Miller",
+  //   authorDesignation: "Md, QS Tech",
+  //   authorComment:
+  //     "Professionelle Abwicklung komplexer Sendungen. Ihre Expertise in Zoll und Dokumentation hat uns Zeit und Geld gespart.",
+  // },
 ];
 
 const Reviews = () => {

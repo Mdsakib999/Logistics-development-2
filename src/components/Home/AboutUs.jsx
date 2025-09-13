@@ -33,11 +33,11 @@ const AboutUs = () => {
             Über Spedition Bernhard GmbH
           </h2>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Lernen Sie Spedition Bernhard GmbH
+            Lernen Sie die Spedition Bernhard GmbH kennen
           </h1>
           <Slide direction="up" duration={1000}>
             <p className="text-sm md:text-md leading-relaxed text-gray-300 text-justify">
-              Die Spedition Bernhard GmbH ist ein führender Anbieter in der Logistikbranche und bekannt für ihre Effizienz und Zuverlässigkeit. Wir sind spezialisiert auf die Bereitstellung maßgeschneiderter Lösungen für Unternehmen jeder Größe. Mit globaler Abdeckung und fortschrittlicher Sendungsverfolgung sorgen wir dafür, dass Ihre Sendungen stets pünktlich und sicher ankommen.
+              Die Spedition Bernhard GmbH ist ein führender Anbieter in der Logistikbranche und bekannt für ihre Effizienz und Zuverlässigkeit. Wir sind darauf spezialisiert, maßgeschneiderte Lösungen für Unternehmen jeder Größe bereitzustellen. Dank globaler Abdeckung und moderner Sendungsverfolgung stellen wir sicher, dass Ihre Sendungen stets pünktlich und sicher ankommen.
             </p>
           </Slide>
         </div>
