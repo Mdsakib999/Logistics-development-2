@@ -40,7 +40,7 @@ const InfoSection = () => {
            Deutschland
           </p>
         </div>
-        <div className="flex flex-col items-center group">
+        {/* <div className="flex flex-col items-center group">
           <div className="flex items-center group justify-center bg-blue-200 hover:bg-blue-400 group duration-700 rounded-full w-24 h-24 mb-4 shadow-lg hover:shadow-xl transform hover:scale-110 transition-all">
             <FaPhone
               size={30}
@@ -51,7 +51,7 @@ const InfoSection = () => {
           <p className="text-sm sm:text-base text-blue-400 font-medium">
             +49 15679702744
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -137,7 +137,7 @@ const Footer = () => {
                 </span>
               </div>
 
-              <div className="flex items-center justify-start gap-3 group">
+              {/* <div className="flex items-center justify-start gap-3 group">
                 <div className="p-2 bg-blue-500/10 rounded-full group-hover:bg-blue-500/20 transition-colors">
                   <FaPhone size={18} className="text-blue-400" />
                 </div>
@@ -146,7 +146,7 @@ const Footer = () => {
                     +49 15679702744
                   </a>
                 </span>
-              </div>
+              </div> */}
 
               <div className="flex items-center justify-start gap-3 group">
                 <div className="p-2 bg-blue-500/10 rounded-full group-hover:bg-blue-500/20 transition-colors">

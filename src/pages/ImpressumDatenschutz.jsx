@@ -22,10 +22,10 @@ const ImpressumDatenschutz = () => {
 
 				</p>
 				<p className="mb-2 text-base sm:text-lg">
-					<strong>Telefon: </strong>{" "}
+					{/* <strong>Telefon: </strong>{" "}
 					<a href="tel:+4915679702744" className="">
 						+49 15679702744
-					</a>
+					</a> */}
 					<br />
 					<strong>E-Mail: </strong> 
 					<a href="mailto:transport@bernhardlogistik.de" className="">
@@ -80,10 +80,10 @@ const ImpressumDatenschutz = () => {
 					<br />
 					Boschstraße 4, 67304 Eisenberg, Deutschland
 					<br />
-					<strong>Telefon:</strong>{" "}
+					{/* <strong>Telefon:</strong>{" "}
 					<a href="tel:+4915679702744" className="">
 						+49 15679702744
-					</a>
+					</a> */}
 					<br />
 					<strong>E-Mail: </strong> 
 					<a href="mailto:transport@bernhardlogistik.de" className="">

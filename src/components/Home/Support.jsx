@@ -17,7 +17,7 @@ const supportChannels = [
     title: "Telefonsupport rund um die Uhr",
     description:
       "Direkter Kontakt zu unserem Expertenteam – rund um die Uhr erreichbar.",
-    contact: "+49 15679702744",
+    // contact: "+49 15679702744",
     availability: "Always Available",
     color: "from-blue-500 to-blue-600",
     bgPattern: "bg-gradient-to-br from-blue-50 to-blue-100",
@@ -123,12 +123,12 @@ const Support = () => {
           {/* Contact CTA */}
           <div className="text-center mt-16">
      
-            <button className="mt-6 group bg-white border-2 border-[#0778D4] text-[#0778D4] px-8 py-3 rounded-2xl font-bold hover:bg-[#0778D4] hover:text-white transition-all duration-300 transform hover:scale-105">
+            {/* <button className="mt-6 group bg-white border-2 border-[#0778D4] text-[#0778D4] px-8 py-3 rounded-2xl font-bold hover:bg-[#0778D4] hover:text-white transition-all duration-300 transform hover:scale-105">
               <div className="flex items-center">
                 <Phone className="w-5 h-5 mr-2 group-hover:animate-pulse" />
                 Call Now: +49 15679702744
               </div>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
