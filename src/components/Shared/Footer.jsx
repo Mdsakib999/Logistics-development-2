@@ -60,7 +60,7 @@ const Footer = () => {
             <div className="flex items-center gap-2 mb-6">
               <div className="w-8 h-1 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
               <h3 className="text-xl lg:text-2xl font-bold text-white">
-                SCHNELLE LINKS
+                Schnellzugriff
               </h3>
             </div>
             <ul className="space-y-3">
@@ -124,7 +124,7 @@ const Footer = () => {
             <div className="flex items-center gap-2 mb-6">
               <div className="w-8 h-1 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
               <h3 className="text-xl lg:text-2xl font-bold text-white">
-                FOLGE UNS
+                Kontakt
               </h3>
             </div>
             <div className="space-y-4 w-full">
