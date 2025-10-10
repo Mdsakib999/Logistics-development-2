@@ -15,7 +15,7 @@ const ImpressumDatenschutz = () => {
         <p className="mb-5 text-base sm:text-lg">
           <strong>Spedition Bernhard GmbH</strong>
           <br />
-          Boschstr. 4 67304 Eisenberg
+          Boschstr. 4 <br /> 67304 Eisenberg
           <br />
         </p>
 
@@ -87,7 +87,7 @@ const ImpressumDatenschutz = () => {
           Spedition Bernhard GmbH
           <br />
           {/* Boschstraße 4, 67304 Eisenberg, Deutschland */}
-		  Boschstr. 4 67304 Eisenberg
+		  Boschstr. 4 <br /> 67304 Eisenberg
           <br />
           {/* <strong>Telefon:</strong>{" "}
 					<a href="tel:+4915679702744" className="">
