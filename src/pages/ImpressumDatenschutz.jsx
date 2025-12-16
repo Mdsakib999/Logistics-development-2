@@ -33,7 +33,7 @@ const ImpressumDatenschutz = () => {
           Registereintrag
         </h2> */}
         <p className="mb-2 text-base sm:text-lg">
-          <strong>Handelsregister:</strong>  HRB 12345
+          <strong>Handelsregister:</strong>  HRB 11828
           <br />
           <strong>Registergericht:</strong> Amtsgerichts Kaiserslautern
           <br />
